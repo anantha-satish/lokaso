@@ -1,0 +1,45 @@
+.common-header {
+    height: 112px;
+
+    @include media-breakpoint-down(md) {
+        height: 62px;
+    }
+}
+
+.navbar-brand {
+    max-width: 140px;
+}
+
+.navbar {
+    --bs-navbar-active-color: var(--bs-white);
+    --bs-navbar-nav-link-padding-x: 12px;
+    --bs-navbar-padding-y: 34px;
+
+    @include media-breakpoint-down(md) {
+        --bs-navbar-padding-y: 8px;
+    }
+
+    .navbar-nav {
+        --bs-nav-link-padding-x: 12px;
+    }
+
+    .nav-link {
+        font-weight: 500;
+        color: var(--bs-primary);
+
+        &.active {
+            background-color: var(--bs-primary);
+        }
+    }
+
+}
+
+.navbar-toggler {
+    border-width: 0px;
+
+    &:focus,
+    &:hover {
+        outline: none;
+        box-shadow: none;
+    }
+}

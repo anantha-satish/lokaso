@@ -2,9 +2,6 @@
 $enable-gradients: true;
 $enable-shadows: true;
 
-// Customize some defaults
-@import "./common/index";
-
 // Required
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";
@@ -43,7 +40,7 @@ $enable-shadows: true;
 @import "../../node_modules/bootstrap/scss/modal"; // Requires transitions
 // @import "../../node_modules/bootstrap/scss/tooltip";
 @import "../../node_modules/bootstrap/scss/popover";
-// @import "../../node_modules/bootstrap/scss/carousel";
+@import "../../node_modules/bootstrap/scss/carousel";
 // @import "../../node_modules/bootstrap/scss/spinners";
 @import "../../node_modules/bootstrap/scss/offcanvas"; // Requires transitions
 // @import "../../node_modules/bootstrap/scss/placeholders";
@@ -58,9 +55,10 @@ $enable-shadows: true;
 
 //
 // Custom styles
-//
+@import "./common/index";
 @import "./components/index";
 @import "./layouts/index";
+@import "./icomoon/index";
 
 body {
     padding: 0;

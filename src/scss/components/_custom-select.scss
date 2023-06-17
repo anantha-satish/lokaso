@@ -1,0 +1,74 @@
+$background-color_2: rgba(0, 0, 0, 0.1);
+$border-color_1: var(--bs-white) transparent transparent transparent;
+$border-color_2: transparent transparent var(--bs-white) transparent;
+$border-color_3: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+
+.custom-select {
+    position: relative;
+    font-family: var(--bs-font-sans-serif);
+    margin-right: auto;
+
+    select {
+        display: none;
+    }
+}
+
+.select-selected {
+    background-color: var(--bs-primary);
+    color: var(--bs-white);
+    padding: 6px 32px 6px 10px;
+    border: 1px solid transparent;
+    border-color: $border-color_3;
+    cursor: pointer;
+    max-width: 150px;
+
+    &:after {
+        position: absolute;
+        content: "";
+        top: 16px;
+        right: 10px;
+        width: 0;
+        height: 0;
+        border: 6px solid transparent;
+        border-color: $border-color_1;
+    }
+}
+
+.select-selected.select-arrow-active {
+    &:after {
+        border-color: $border-color_2;
+        top: 10px;
+    }
+}
+
+.select-items {
+    div {
+        color: var(--bs-white);
+        padding: 8px 16px;
+        border: 1px solid transparent;
+        border-color: $border-color_3;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $background-color_2;
+        }
+    }
+
+    position: absolute;
+    background-color: var(--bs-primary);
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    max-height: 126px;
+    overflow: auto;
+    width: 150px;
+}
+
+.select-hide {
+    display: none;
+}
+
+.same-as-selected {
+    background-color: $background-color_2;
+}
