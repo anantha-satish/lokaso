@@ -3,13 +3,20 @@
 const path = require('path')
 const autoprefixer = require('autoprefixer')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
     mode: 'development',
-    entry: './src/js/main.js',
+    entry: {
+        main: path.resolve(__dirname, 'src/js/main.js'),
+        customselect: path.resolve(__dirname, 'src/js/customselect.js'),
+    },
     output: {
-        filename: 'main.js',
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(__dirname, 'dist'),
+        filename: '[name].[hash:8].js',
+        sourceMapFilename: '[name].[hash:8].map',
+        chunkFilename: '[id].[hash:8].js',
+        clean: true,
     },
     devServer: {
         static: path.resolve(__dirname, 'dist'),
@@ -17,7 +24,24 @@ module.exports = {
         hot: true
     },
     plugins: [
-        new HtmlWebpackPlugin({ template: './src/index.html' })
+        new HtmlWebpackPlugin({
+            filename: 'index.html',
+            template: 'src/index.html',
+            chunks: ['main', 'customselect']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'details.html',
+            template: 'src/details.html',
+            chunks: ['main', 'customselect']
+        }),
+        new CopyPlugin({
+            patterns: [
+                {
+                    from: path.resolve(__dirname, 'src/assets/'),
+                    to: path.resolve(__dirname, 'dist/assets/')
+                },
+            ],
+        }),
     ],
     module: {
         rules: [
