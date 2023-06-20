@@ -12,9 +12,11 @@
     <header class="common-header fixed-top bg-white">
         <nav class="navbar navbar-expand-lg" aria-label="Offcanvas navbar large">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img class="w-100" src="./assets/images/logo.png" alt="Lokaso" />
-                </a>
+                <h1 class="navbar-brand">
+                    <a class="navbar-brand-link" href="./index.html">
+                        <img class="w-100" src="./assets/images/logo.png" alt="Lokaso" />
+                    </a>
+                </h1>
                 <div class="custom-select">
                     <select>
                         <option value="0">Select Location:</option>
@@ -41,10 +43,10 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                                <a class="nav-link" aria-current="page" href="#">Blog</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Photography</a>
+                                <a class="nav-link active" href="#">Photography</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Signup</a>
@@ -64,57 +66,22 @@
         <section class="container-fluid">
             <!-- Banner Start -->
             <section class="banner-section mb-5">
-                <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div id="bannerCarousel" class="carousel">
                     <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="10000">
+                        <div class="carousel-item active">
                             <video class="experience-category-video w-100" playsinline
                                 poster="./assets/images/banner-1.png" muted autoplay loop>
                                 <source
-                                    src="https://assets.mixkit.co/videos/preview/mixkit-crowd-jumping-at-the-concert-14084-large.mp4"
+                                    src="https://assets.mixkit.co/videos/preview/mixkit-waving-hands-in-the-air-at-a-concert-27688-large.mp4"
                                     type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 class="carousel-caption-title">Goa..</h5>
-                                <p class="carousel-caption-info">Experience it like never before.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item" data-bs-interval="2000">
-                            <video class="experience-category-video w-100" playsinline
-                                poster="./assets/images/banner-1.png" muted autoplay loop>
-                                <source src="https://cdn.coverr.co/videos/coverr-wedding-by-the-beach-134/1080p.mp4"
-                                    type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 class="carousel-caption-title">Goa..</h5>
-                                <p class="carousel-caption-info">Experience it like never before.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <video class="experience-category-video w-100" playsinline
-                                poster="./assets/images/banner-1.png" muted autoplay loop>
-                                <source
-                                    src="https://cdn.coverr.co/videos/coverr-man-running-and-holding-a-kite-9253/1080p.mp4"
-                                    type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-caption d-block">
                                 <h5 class="carousel-caption-title">Goa..</h5>
                                 <p class="carousel-caption-info">Experience it like never before.</p>
                             </div>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
             </section>
             <!-- Banner End -->
@@ -133,17 +100,21 @@
                             <video class="experience-category-video w-100" playsinline
                                 poster="./assets/images/banner-1.png" muted autoplay loop>
                                 <source
-                                    src="https://cdn.coverr.co/videos/coverr-bikers-driving-away-down-a-path-9981/1080p.mp4"
+                                    src="https://assets.mixkit.co/videos/preview/mixkit-man-speeding-a-road-on-a-motorcycle-39913-large.mp4"
                                     type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
                             <div class="experience-category-data">
-                                <div class="experience-category-data-location">3 ° 43 ‘ 13 “ N, 73 ° 13 ‘ 27” E</div>
-                                <a href="./details.html" class="experience-category-link">
-                                    <img src="./assets/images/round-text.png" alt=""
-                                        class="experience-category-link-text">
-                                    <span class="icon-navigate"></span>
-                                </a>
+                                <header class="experience-category-data-head">
+                                    <span class="experience-category-data-location">3 ° 43 ‘ 13 “ N, 73 ° 13 ‘ 27”
+                                        E</span>
+                                    <a href="./details.html" class="experience-category-link">
+                                        <img src="./assets/images/nav-circle.svg" alt=""
+                                            class="experience-category-link-circle">
+                                        <img src="./assets/images/nav-circle-text.svg" alt=""
+                                            class="experience-category-link-text">
+                                    </a>
+                                </header>
                                 <div class="experience-category-data-bottom mt-auto">
                                     <h6 class="category-label">Exclusively from lokaso</h6>
                                     <h3 class="category-title">Curated experiences in Goa</h3>
@@ -153,7 +124,7 @@
                     </div>
                     <div class="col-12 col-md-6 col-lg-7">
                         <div class="experience-category mb-4">
-                            <video class="experience-category-video h-100" playsinline
+                            <video class="experience-category-video w-100" playsinline
                                 poster="./assets/images/banner-1.png" muted autoplay loop>
                                 <source
                                     src="https://cdn.coverr.co/videos/coverr-a-road-through-the-hills-6377/1080p.mp4"
@@ -161,12 +132,16 @@
                                 Your browser does not support the video tag.
                             </video>
                             <div class="experience-category-data">
-                                <div class="experience-category-data-location">3 ° 43 ‘ 13 “ N, 73 ° 13 ‘ 27” E</div>
-                                <a href="./details.html" class="experience-category-link">
-                                    <img src="./assets/images/round-text.png" alt=""
-                                        class="experience-category-link-text">
-                                    <span class="icon-navigate"></span>
-                                </a>
+                                <header class="experience-category-data-head">
+                                    <span class="experience-category-data-location">3 ° 43 ‘ 13 “ N, 73 ° 13 ‘ 27”
+                                        E</span>
+                                    <a href="./details.html" class="experience-category-link">
+                                        <img src="./assets/images/nav-circle.svg" alt=""
+                                            class="experience-category-link-circle">
+                                        <img src="./assets/images/nav-circle-text.svg" alt=""
+                                            class="experience-category-link-text">
+                                    </a>
+                                </header>
                                 <div class="experience-category-data-bottom mt-auto">
                                     <h6 class="category-label">Exclusively from lokaso</h6>
                                     <h3 class="category-title">Curated experiences in Goa</h3>
@@ -184,12 +159,16 @@
                                 Your browser does not support the video tag.
                             </video>
                             <div class="experience-category-data">
-                                <div class="experience-category-data-location">3 ° 43 ‘ 13 “ N, 73 ° 13 ‘ 27” E</div>
-                                <a href="./details.html" class="experience-category-link">
-                                    <img src="./assets/images/round-text.png" alt=""
-                                        class="experience-category-link-text">
-                                    <span class="icon-navigate"></span>
-                                </a>
+                                <header class="experience-category-data-head">
+                                    <span class="experience-category-data-location">3 ° 43 ‘ 13 “ N, 73 ° 13 ‘ 27”
+                                        E</span>
+                                    <a href="./details.html" class="experience-category-link">
+                                        <img src="./assets/images/nav-circle.svg" alt=""
+                                            class="experience-category-link-circle">
+                                        <img src="./assets/images/nav-circle-text.svg" alt=""
+                                            class="experience-category-link-text">
+                                    </a>
+                                </header>
                                 <div class="experience-category-data-bottom mt-auto">
                                     <h6 class="category-label">Exclusively from lokaso</h6>
                                     <h3 class="category-title">Curated experiences in Goa</h3>
@@ -199,19 +178,23 @@
                     </div>
                     <div class="col-12 col-md-6 col-lg-5">
                         <div class="experience-category mb-4">
-                            <video class="experience-category-video h-100" playsinline
+                            <video class="experience-category-video w-100" playsinline
                                 poster="./assets/images/banner-1.png" muted autoplay loop>
                                 <source src="https://cdn.coverr.co/videos/coverr-surfers-catching-a-wave-9416/1080p.mp4"
                                     type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
                             <div class="experience-category-data">
-                                <div class="experience-category-data-location">3 ° 43 ‘ 13 “ N, 73 ° 13 ‘ 27” E</div>
-                                <a href="./details.html" class="experience-category-link">
-                                    <img src="./assets/images/round-text.png" alt=""
-                                        class="experience-category-link-text">
-                                    <span class="icon-navigate"></span>
-                                </a>
+                                <header class="experience-category-data-head">
+                                    <span class="experience-category-data-location">3 ° 43 ‘ 13 “ N, 73 ° 13 ‘ 27”
+                                        E</span>
+                                    <a href="./details.html" class="experience-category-link">
+                                        <img src="./assets/images/nav-circle.svg" alt=""
+                                            class="experience-category-link-circle">
+                                        <img src="./assets/images/nav-circle-text.svg" alt=""
+                                            class="experience-category-link-text">
+                                    </a>
+                                </header>
                                 <div class="experience-category-data-bottom mt-auto">
                                     <h6 class="category-label">Exclusively from lokaso</h6>
                                     <h3 class="category-title">Curated experiences in Goa</h3>
@@ -228,12 +211,16 @@
                                 Your browser does not support the video tag.
                             </video>
                             <div class="experience-category-data">
-                                <div class="experience-category-data-location">3 ° 43 ‘ 13 “ N, 73 ° 13 ‘ 27” E</div>
-                                <a href="./details.html" class="experience-category-link">
-                                    <img src="./assets/images/round-text.png" alt=""
-                                        class="experience-category-link-text">
-                                    <span class="icon-navigate"></span>
-                                </a>
+                                <header class="experience-category-data-head">
+                                    <span class="experience-category-data-location">3 ° 43 ‘ 13 “ N, 73 ° 13 ‘ 27”
+                                        E</span>
+                                    <a href="./details.html" class="experience-category-link">
+                                        <img src="./assets/images/nav-circle.svg" alt=""
+                                            class="experience-category-link-circle">
+                                        <img src="./assets/images/nav-circle-text.svg" alt=""
+                                            class="experience-category-link-text">
+                                    </a>
+                                </header>
                                 <div class="experience-category-data-bottom mt-auto">
                                     <h6 class="category-label">Exclusively from lokaso</h6>
                                     <h3 class="category-title">Curated experiences in Goa</h3>
@@ -243,7 +230,7 @@
                     </div>
                     <div class="col-12 col-md-6 col-lg-7">
                         <div class="experience-category mb-4">
-                            <video class="experience-category-video h-100" playsinline
+                            <video class="experience-category-video w-100" playsinline
                                 poster="./assets/images/banner-1.png" muted autoplay loop>
                                 <source
                                     src="https://cdn.coverr.co/videos/coverr-man-running-with-two-dogs-up-a-mountain-2620/1080p.mp4"
@@ -251,12 +238,16 @@
                                 Your browser does not support the video tag.
                             </video>
                             <div class="experience-category-data">
-                                <div class="experience-category-data-location">3 ° 43 ‘ 13 “ N, 73 ° 13 ‘ 27” E</div>
-                                <a href="./details.html" class="experience-category-link">
-                                    <img src="./assets/images/round-text.png" alt=""
-                                        class="experience-category-link-text">
-                                    <span class="icon-navigate"></span>
-                                </a>
+                                <header class="experience-category-data-head">
+                                    <span class="experience-category-data-location">3 ° 43 ‘ 13 “ N, 73 ° 13 ‘ 27”
+                                        E</span>
+                                    <a href="./details.html" class="experience-category-link">
+                                        <img src="./assets/images/nav-circle.svg" alt=""
+                                            class="experience-category-link-circle">
+                                        <img src="./assets/images/nav-circle-text.svg" alt=""
+                                            class="experience-category-link-text">
+                                    </a>
+                                </header>
                                 <div class="experience-category-data-bottom mt-auto">
                                     <h6 class="category-label">Exclusively from lokaso</h6>
                                     <h3 class="category-title">Curated experiences in Goa</h3>
@@ -273,12 +264,16 @@
                                 Your browser does not support the video tag.
                             </video>
                             <div class="experience-category-data">
-                                <div class="experience-category-data-location">3 ° 43 ‘ 13 “ N, 73 ° 13 ‘ 27” E</div>
-                                <a href="./details.html" class="experience-category-link">
-                                    <img src="./assets/images/round-text.png" alt=""
-                                        class="experience-category-link-text">
-                                    <span class="icon-navigate"></span>
-                                </a>
+                                <header class="experience-category-data-head">
+                                    <span class="experience-category-data-location">3 ° 43 ‘ 13 “ N, 73 ° 13 ‘ 27”
+                                        E</span>
+                                    <a href="./details.html" class="experience-category-link">
+                                        <img src="./assets/images/nav-circle.svg" alt=""
+                                            class="experience-category-link-circle">
+                                        <img src="./assets/images/nav-circle-text.svg" alt=""
+                                            class="experience-category-link-text">
+                                    </a>
+                                </header>
                                 <div class="experience-category-data-bottom mt-auto">
                                     <h6 class="category-label">Exclusively from lokaso</h6>
                                     <h3 class="category-title">Curated experiences in Goa</h3>
@@ -288,7 +283,7 @@
                     </div>
                     <div class="col-12 col-md-6 col-lg-5">
                         <div class="experience-category mb-4">
-                            <video class="experience-category-video h-100" playsinline
+                            <video class="experience-category-video w-100" playsinline
                                 poster="./assets/images/banner-1.png" muted autoplay loop>
                                 <source
                                     src="https://cdn.coverr.co/videos/coverr-a-dog-drinks-water-from-a-portable-pet-water-bottle-8512/1080p.mp4"
@@ -296,12 +291,16 @@
                                 Your browser does not support the video tag.
                             </video>
                             <div class="experience-category-data">
-                                <div class="experience-category-data-location">3 ° 43 ‘ 13 “ N, 73 ° 13 ‘ 27” E</div>
-                                <a href="./details.html" class="experience-category-link">
-                                    <img src="./assets/images/round-text.png" alt=""
-                                        class="experience-category-link-text">
-                                    <span class="icon-navigate"></span>
-                                </a>
+                                <header class="experience-category-data-head">
+                                    <span class="experience-category-data-location">3 ° 43 ‘ 13 “ N, 73 ° 13 ‘ 27”
+                                        E</span>
+                                    <a href="./details.html" class="experience-category-link">
+                                        <img src="./assets/images/nav-circle.svg" alt=""
+                                            class="experience-category-link-circle">
+                                        <img src="./assets/images/nav-circle-text.svg" alt=""
+                                            class="experience-category-link-text">
+                                    </a>
+                                </header>
                                 <div class="experience-category-data-bottom mt-auto">
                                     <h6 class="category-label">Exclusively from lokaso</h6>
                                     <h3 class="category-title">Curated experiences in Goa</h3>
@@ -419,30 +418,28 @@
 
             <!-- Bottom footer -->
             <div class="footer-bottom pb-3">
-                <div class="container px-0">
-                    <header class="footer-bottom-header">
-                        <hr class="footer-divider my-0">
-                        <span class="footer-bottom-header-title">GET IN TOUCH</span>
-                    </header>
-                    <div class="row">
-                        <div class="col-12 col-md-6">
-                            <div class="footer-bottom-info">
-                                <label class="footer-bottom-info-label">We are available:</label>
-                                <p class="footer-bottom-info-value"><span class="dot dot-green"></span>Monday - Friday:
-                                    8am to 6pm IST</p>
-                            </div>
+                <header class="footer-bottom-header">
+                    <hr class="footer-divider my-0">
+                    <span class="footer-bottom-header-title">GET IN TOUCH</span>
+                </header>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="footer-bottom-info">
+                            <label class="footer-bottom-info-label">We are available:</label>
+                            <p class="footer-bottom-info-value"><span class="dot dot-green"></span>Monday - Friday:
+                                8am to 6pm IST</p>
                         </div>
-                        <div class="col-6 col-md-3">
-                            <div class="footer-bottom-info">
-                                <label class="footer-bottom-info-label">E-mail:</label>
-                                <p class="footer-bottom-info-value">info@golokaso.com</p>
-                            </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="footer-bottom-info">
+                            <label class="footer-bottom-info-label">E-mail:</label>
+                            <p class="footer-bottom-info-value">info@golokaso.com</p>
                         </div>
-                        <div class="col-6 col-md-3 d-flex justify-content-md-end">
-                            <div class="footer-bottom-info">
-                                <label class="footer-bottom-info-label">Phone:</label>
-                                <p class="footer-bottom-info-value">+91-8892076998</p>
-                            </div>
+                    </div>
+                    <div class="col-6 col-md-3 d-flex justify-content-md-end">
+                        <div class="footer-bottom-info">
+                            <label class="footer-bottom-info-label">Phone:</label>
+                            <p class="footer-bottom-info-value">+91-8892076998</p>
                         </div>
                     </div>
                 </div>
