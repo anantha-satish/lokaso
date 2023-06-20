@@ -1,0 +1,29 @@
+.container-fluid {
+    @include media-breakpoint-up(md) {
+        padding: 0 20px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding: 0 30px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        padding: 0 60px;
+    }
+}
+
+
+.comming-soon-template {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bs-primary);
+    height: 500px;
+    overflow: hidden;
+    margin-bottom: 40px;
+
+    &-img {
+        height: 100%;
+        object-fit: cover;
+    }
+}
