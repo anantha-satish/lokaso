@@ -13,3 +13,7 @@ yarn.lock
 .yarnclean
 .vscode
 .idea
+
+package-lock
+
+src/assets/videos
