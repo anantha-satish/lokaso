@@ -1,0 +1,25 @@
+.activities-list {
+    span {
+        background-color: var(--bs-block);
+        width: 28px;
+        height: 28px;
+        display: inline-block;
+        border-radius: 50%;
+        color: var(--bs-white);
+        text-align: center;
+        vertical-align: middle;
+        i {
+            vertical-align: middle;
+        }
+    }
+}
+
+.black {
+    color: var(--bs-block);
+}
+.gray {
+    color: var(--gray-700);
+}
+.secondary {
+    color: var(--bs-secondary);
+}
