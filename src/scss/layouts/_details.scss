@@ -23,3 +23,15 @@
 .secondary {
     color: var(--bs-secondary);
 }
+.img-fluid {
+    width: 100%;
+}
+.detail-photo-small-height {
+    height: 298px;
+}
+.detail-photo-height {
+    height: 433px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--bs-font-seconary-serif);
+}
