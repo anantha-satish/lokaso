@@ -1,15 +1,17 @@
+.experience-category-detail {
+    position: relative;
+    height: 480px;
+    overflow: hidden;
+}
+
 .activities-list {
-    span {
-        background-color: var(--bs-block);
-        width: 28px;
-        height: 28px;
-        display: inline-block;
-        border-radius: 50%;
-        color: var(--bs-white);
-        text-align: center;
-        vertical-align: middle;
-        i {
-            vertical-align: middle;
+    .activities-list-item {
+        .icon-navigate {
+            background-color: var(--bs-block);
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            color: var(--bs-white);
         }
     }
 }
@@ -17,21 +19,27 @@
 .black {
     color: var(--bs-block);
 }
+
 .gray {
     color: var(--gray-700);
 }
+
 .secondary {
     color: var(--bs-secondary);
 }
-.img-fluid {
-    width: 100%;
-}
+
 .detail-photo-small-height {
-    height: 298px;
+    height: 300px;
+
+    @include media-breakpoint-down(lg) {
+        height: 200px;
+    }
 }
+
 .detail-photo-height {
-    height: 433px;
-}
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--bs-font-seconary-serif);
+    height: 420px;
+
+    @include media-breakpoint-down(md) {
+        height: 320px;
+    }
 }

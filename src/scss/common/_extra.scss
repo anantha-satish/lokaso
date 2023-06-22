@@ -27,3 +27,27 @@
         object-fit: cover;
     }
 }
+
+/**Object Fit Cover**/
+.objectfit-cover {
+    object-fit: cover;
+}
+
+/**Divider**/
+.footer-divider {
+    &-white {
+        border-color: var(--bs-white);
+    }
+
+    &-gray {
+        border-color: var(--bs-gray-800);
+    }
+}
+
+.divider {
+    &-dark {
+        border-width: 2px;
+        border-color: var(--bs-dark);
+        opacity: 1;
+    }
+}
