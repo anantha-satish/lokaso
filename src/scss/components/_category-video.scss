@@ -1,6 +1,7 @@
 .experience-category {
     position: relative;
     height: 500px;
+    color: var(--bs-white);
     overflow: hidden;
 
     &-video {
@@ -15,7 +16,6 @@
         left: 0;
         width: 100%;
         height: 100%;
-        color: var(--bs-white);
         padding: 30px 30px 45px;
         display: flex;
         align-items: flex-start;
@@ -63,11 +63,13 @@
     .category-label {
         font-size: 1rem;
         font-weight: 500;
+        color: var(--bs-white);
     }
 
     .category-title {
         font-family: var(--bs-font-seconary-serif);
         font-size: 2.25rem;
+        color: var(--bs-white);
     }
 
     &:hover {
