@@ -1,0 +1,45 @@
+.experience-category-detail {
+    position: relative;
+    height: 480px;
+    overflow: hidden;
+}
+
+.activities-list {
+    .activities-list-item {
+        .icon-navigate {
+            background-color: var(--bs-block);
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            color: var(--bs-white);
+        }
+    }
+}
+
+.black {
+    color: var(--bs-block);
+}
+
+.gray {
+    color: var(--gray-700);
+}
+
+.secondary {
+    color: var(--bs-secondary);
+}
+
+.detail-photo-small-height {
+    height: 300px;
+
+    @include media-breakpoint-down(lg) {
+        height: 200px;
+    }
+}
+
+.detail-photo-height {
+    height: 420px;
+
+    @include media-breakpoint-down(md) {
+        height: 320px;
+    }
+}

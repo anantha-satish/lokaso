@@ -1,4 +1,10 @@
 @import "./custom-select";
 @import "./carousel";
 @import "./card";
-@import "./category-video"
+@import "./category-video";
+
+ul,li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
