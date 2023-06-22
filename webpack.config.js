@@ -8,8 +8,10 @@ const CopyPlugin = require("copy-webpack-plugin");
 module.exports = {
     mode: 'development',
     entry: {
+        bootstrap: path.resolve(__dirname, 'src/js/bootstrap.js'),
         main: path.resolve(__dirname, 'src/js/main.js'),
         customselect: path.resolve(__dirname, 'src/js/customselect.js'),
+        datepicker: path.resolve(__dirname, 'src/js/datepicker.js'),
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -27,12 +29,17 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: 'src/index.html',
-            chunks: ['main', 'customselect']
+            chunks: ['main', 'bootstrap', 'datepicker', 'customselect']
         }),
         new HtmlWebpackPlugin({
             filename: 'details.html',
             template: 'src/details.html',
-            chunks: ['main', 'customselect']
+            chunks: ['main', 'bootstrap', 'datepicker', 'customselect']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'date-picker.html',
+            template: 'src/date-picker.html',
+            chunks: ['main', 'bootstrap', 'datepicker', 'customselect']
         }),
         new CopyPlugin({
             patterns: [
