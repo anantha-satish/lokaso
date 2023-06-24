@@ -51,3 +51,21 @@
         opacity: 1;
     }
 }
+
+
+.row-equal {
+    min-height: 100vh;
+}
+
+.form-link {
+    color: var(--bs-link-color-rgb);
+    text-decoration: none;
+
+    &:hover {
+        color: var(--bs-link-hover-color-rgb);
+    }
+}
+
+.common-border {
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}

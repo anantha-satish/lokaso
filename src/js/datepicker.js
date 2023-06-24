@@ -7,7 +7,6 @@ const fp = flatpickr("#date-selector", {
         function (date) {
             // return true to disable
             return (date.getDay() === 0 || date.getDay() === 6);
-
         }
     ],
 });

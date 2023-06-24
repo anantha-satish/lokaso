@@ -4,6 +4,19 @@
     color: var(--bs-white);
     overflow: hidden;
 
+    &-overlay {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        max-width: 640px;
+    }
+
+    &-vh {
+        height: 100vh;
+    }
+
     &-video {
         position: relative;
         height: 100%;

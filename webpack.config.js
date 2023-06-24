@@ -37,6 +37,21 @@ module.exports = {
             chunks: ['main', 'bootstrap', 'datepicker', 'customselect']
         }),
         new HtmlWebpackPlugin({
+            filename: 'login.html',
+            template: 'src/login.html',
+            chunks: ['main', 'bootstrap', 'datepicker', 'customselect']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'signup.html',
+            template: 'src/signup.html',
+            chunks: ['main', 'bootstrap', 'datepicker', 'customselect']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'influencer-signup.html',
+            template: 'src/influencer-signup.html',
+            chunks: ['main', 'bootstrap', 'datepicker', 'customselect']
+        }),
+        new HtmlWebpackPlugin({
             filename: 'date-picker.html',
             template: 'src/date-picker.html',
             chunks: ['main', 'bootstrap', 'datepicker', 'customselect']

@@ -6,8 +6,13 @@
     --bs-font-seconary-serif: 'DM Serif Display', serif;
     --bs-nav-link-font-size: 0.875rem;
     --bs-btn-border-radius: 0;
+    --bs-border-radius: 0;
 }
 
-.sec-font {
+.font-size-14 {
+    font-size: 0.875em;
+}
+
+.font-secondary {
     font-family: var(--bs-font-seconary-serif);
 }
