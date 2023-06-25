@@ -1,9 +1,11 @@
 @import "./custom-select";
-@import "./carousel";
 @import "./card";
 @import "./category-video";
+@import "./form-control";
+@import "./carousel";
 
-ul,li {
+ul,
+li {
     list-style: none;
     padding: 0;
     margin: 0;
