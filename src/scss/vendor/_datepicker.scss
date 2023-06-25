@@ -1,2 +1,50 @@
 @import "https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css";
 @import "https://npmcdn.com/flatpickr/dist/themes/airbnb.css";
+.nextMonthDay, .prevMonthDay {
+    visibility: hidden;
+}
+span.flatpickr-weekday {
+    margin: 10px;
+    background-color: var(--bs-white);
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+}
+.flatpickr-weekdays {
+    height: auto;
+}
+.flatpickr-calendar {
+    background-color: var(--bs-gray-200);
+    box-shadow: none;
+    width: 100%;
+}
+.flatpickr-innerContainer, .flatpickr-rContainer, .flatpickr-days, .dayContainer {
+    width: 100%;
+    min-width: inherit;
+    max-width: inherit;
+}
+.flatpickr-days {
+    margin-top: 10px;
+}
+.flatpickr-day {
+    background-color: var(--bs-white);
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    &:hover {
+        background-color: transparent;
+        border-top: 1px dotted var(--gray-600);
+        border: 1px dotted var(--gray-600);
+        &:nth-child(n+8), &.prevMonthDay:nth-child(n+8), &.nextMonthDay:nth-child(n+8) {
+            border: 1px dotted var(--gray-600);
+        }
+    }
+    &.selected {
+        background-color: var(--bs-secondary); 
+        border-color: var(--bs-secondary);
+        &:hover {
+            background-color: var(--bs-secondary); 
+            border-color: var(--bs-secondary);
+        }
+    }
+}
