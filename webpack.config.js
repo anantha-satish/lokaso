@@ -12,6 +12,7 @@ module.exports = {
         main: path.resolve(__dirname, 'src/js/main.js'),
         customselect: path.resolve(__dirname, 'src/js/customselect.js'),
         datepicker: path.resolve(__dirname, 'src/js/datepicker.js'),
+        details: path.resolve(__dirname, 'src/js/details.js'),
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -29,32 +30,32 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: 'src/index.html',
-            chunks: ['main', 'bootstrap', 'datepicker', 'customselect']
+            chunks: ['main', 'bootstrap', 'customselect']
         }),
         new HtmlWebpackPlugin({
             filename: 'details.html',
             template: 'src/details.html',
-            chunks: ['main', 'bootstrap', 'datepicker', 'customselect']
+            chunks: ['main', 'bootstrap', 'customselect', 'datepicker', 'details']
         }),
         new HtmlWebpackPlugin({
             filename: 'login.html',
             template: 'src/login.html',
-            chunks: ['main', 'bootstrap', 'datepicker', 'customselect']
+            chunks: ['main', 'bootstrap']
         }),
         new HtmlWebpackPlugin({
             filename: 'signup.html',
             template: 'src/signup.html',
-            chunks: ['main', 'bootstrap', 'datepicker', 'customselect']
+            chunks: ['main', 'bootstrap']
         }),
         new HtmlWebpackPlugin({
             filename: 'influencer-signup.html',
             template: 'src/influencer-signup.html',
-            chunks: ['main', 'bootstrap', 'datepicker', 'customselect']
+            chunks: ['main', 'bootstrap']
         }),
         new HtmlWebpackPlugin({
-            filename: 'date-picker.html',
-            template: 'src/date-picker.html',
-            chunks: ['main', 'bootstrap', 'datepicker', 'customselect']
+            filename: 'comming-soon.html',
+            template: 'src/comming-soon.html',
+            chunks: ['main', 'bootstrap']
         }),
         new CopyPlugin({
             patterns: [

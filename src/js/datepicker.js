@@ -1,16 +1,24 @@
-import flatpickr from "flatpickr";
+import AirDatepicker from 'air-datepicker';
+const localeEn = {
+    days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+    daysShort: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+    daysMin: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
+    months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+    monthsShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+    today: 'Today',
+    clear: 'Clear',
+    dateFormat: 'mm/dd/yyyy',
+    timeFormat: 'hh:ii aa',
+    firstDay: 0
+};
 
-const fp = flatpickr("#date-selector", {
-    "mode": "multiple",
-    "inline": true,
-    "disable": [
-        function (date) {
-            // return true to disable
-            return (date.getDay() === 0 || date.getDay() === 6);
-        }
-    ]
+new AirDatepicker("#date-selector", {
+    "inline": 'true',
+    "multipleDates": true,
+    "locale": localeEn,
+    "firstDay": 1,
+    "showOtherMonths": false,
+    "selectOtherMonths": false,
+    "prevHtml": "<span class='icon-chevron-left'></span>",
+    "nextHtml": "<span class='icon-chevron-right'></span>"
 });
-for(var i = 0; i < 7; i++) {
-    console.log('..', $('.flatpickr-weekday'));
-    $('.flatpickr-weekday')[i].textContent = $('.flatpickr-weekday')[i].textContent.replace(/\s/g, '').slice(0, 2);
-}

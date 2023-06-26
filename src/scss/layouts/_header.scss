@@ -27,6 +27,10 @@
         font-weight: 500;
         color: var(--bs-primary);
 
+        .icon-cart {
+            font-size: 1.25rem;
+        }
+
         &.active {
             background-color: var(--bs-primary);
         }
@@ -34,6 +38,10 @@
 
     .btn-close-white {
         filter: none;
+    }
+
+    &-toggler {
+        padding: 0;
     }
 
 }

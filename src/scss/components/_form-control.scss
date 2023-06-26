@@ -52,3 +52,20 @@
     font-size: 0.875rem;
     color: var(--bs-gray-500);
 }
+
+.form-select {
+    box-shadow: none;
+    height: 50px;
+
+    &:required:invalid {
+        color: var(--bs-gray-500);
+    }
+
+    option[value=""][disabled] {
+        display: none;
+    }
+
+    option {
+        color: var(--bs-secondary);
+    }
+}

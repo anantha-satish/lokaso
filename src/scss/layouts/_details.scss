@@ -6,12 +6,20 @@
 
 .activities-list {
     .activities-list-item {
-        .icon-navigate {
+        .icon-arrow-east {
             background-color: var(--bs-block);
             width: 28px;
             height: 28px;
             border-radius: 50%;
             color: var(--bs-white);
+        }
+
+        &-optional {
+            color: var(--gray-700);
+
+            .icon-arrow-east {
+                background-color: var(--gray-700);
+            }
         }
     }
 }
