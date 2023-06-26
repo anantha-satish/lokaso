@@ -1,0 +1,21 @@
+.modal {
+    --bs-modal-border-radius: 0;
+    --bs-modal-header-border-width: 2px;
+    --bs-modal-header-border-color: var(--bs-secondary);
+    --bs-modal-footer-border-width: 2px;
+    --bs-modal-footer-border-color: var(--bs-secondary);
+
+    &-lg {
+        --bs-modal-width: 640px;
+    }
+}
+
+.modal-list,
+.modal-list li {
+    list-style: disc inside;
+    margin-bottom: 5px;
+}
+
+.modal-caption-link {
+    color: var(--bs-green-100);
+}

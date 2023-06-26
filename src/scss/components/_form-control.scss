@@ -48,6 +48,15 @@
     color: var(--gray-600);
 }
 
+.form-link {
+    color: var(--bs-link-color-rgb);
+    text-decoration: none;
+
+    &:hover {
+        color: var(--bs-link-hover-color-rgb);
+    }
+}
+
 .form-condition {
     font-size: 0.875rem;
     color: var(--bs-gray-500);
