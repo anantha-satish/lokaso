@@ -10,6 +10,18 @@
     }
 }
 
+.btn-link {
+    --bs-btn-color: var(--bs-secondary);
+    --bs-btn-hover-color: var(--bs-gray-dark);
+    --bs-btn-active-color: var(--bs-gray-dark);
+    text-decoration: none;
+    font-weight: 500;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
 .btn-light {
     --bs-btn-color: var(--bs-white);
     --bs-btn-bg: rgb(83, 56, 158);

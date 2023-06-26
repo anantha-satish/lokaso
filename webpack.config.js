@@ -13,6 +13,8 @@ module.exports = {
         customselect: path.resolve(__dirname, 'src/js/customselect.js'),
         datepicker: path.resolve(__dirname, 'src/js/datepicker.js'),
         details: path.resolve(__dirname, 'src/js/details.js'),
+        checkout: path.resolve(__dirname, 'src/js/checkout.js'),
+        cart: path.resolve(__dirname, 'src/js/cart.js'),
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -56,6 +58,16 @@ module.exports = {
             filename: 'comming-soon.html',
             template: 'src/comming-soon.html',
             chunks: ['main', 'bootstrap']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'checkout.html',
+            template: 'src/checkout.html',
+            chunks: ['main', 'bootstrap', 'customselect', 'checkout']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'cart.html',
+            template: 'src/cart.html',
+            chunks: ['main', 'bootstrap', 'customselect', 'cart']
         }),
         new CopyPlugin({
             patterns: [

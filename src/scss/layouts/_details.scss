@@ -24,18 +24,6 @@
     }
 }
 
-.black {
-    color: var(--bs-block);
-}
-
-.gray {
-    color: var(--gray-700);
-}
-
-.secondary {
-    color: var(--bs-secondary);
-}
-
 .detail-photo-small-height {
     height: 300px;
 
@@ -54,5 +42,4 @@
 
 .add-inline-cart {
     background-color: var(--bs-gray-200);
-    // display: none;
 }

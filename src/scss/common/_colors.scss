@@ -16,4 +16,18 @@
     --bs-heading-color: #000;
     --bs-link-color-rgb: #6941C6;
     --bs-link-hover-color-rgb: #5d3aad;
+    --bs-blue: #004EEB;
+    --bs-green-100: #669F2A;
+}
+
+.black {
+    color: var(--bs-block);
+}
+
+.gray {
+    color: var(--gray-700);
+}
+
+.secondary {
+    color: var(--bs-secondary);
 }

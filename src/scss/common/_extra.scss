@@ -12,6 +12,17 @@
     }
 }
 
+.container-fixed {
+    max-width: 900px;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 
 .comming-soon-template {
     display: flex;
@@ -50,6 +61,18 @@
         border-color: var(--bs-dark);
         opacity: 1;
     }
+
+    &-gray-light {
+        border-width: 2px;
+        border-color: var(--bs-gray-300);
+        opacity: 1;
+    }
+
+    &-gray-500 {
+        border-width: 2px;
+        border-color: var(--bs-gray-500);
+        opacity: 1;
+    }
 }
 
 
@@ -57,15 +80,34 @@
     min-height: 100vh;
 }
 
-.form-link {
-    color: var(--bs-link-color-rgb);
-    text-decoration: none;
-
-    &:hover {
-        color: var(--bs-link-hover-color-rgb);
-    }
-}
-
 .common-border {
     border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+
+/**
+Different Aspect ratio for images
+**/
+.aspect-ratio-equal {
+    aspect-ratio: 1;
+}
+
+.aspect-ratio-landscape {
+    aspect-ratio: 1.78;
+}
+
+.aspect-ratio2 {
+    aspect-ratio: 2;
+}
+
+.aspect-ratio-third {
+    aspect-ratio: 0.78;
+}
+
+.aspect-ratio-potrait {
+    aspect-ratio: 0.5;
+}
+
+.blue-link {
+    color: var(--bs-blue);
 }
