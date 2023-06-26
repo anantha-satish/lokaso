@@ -49,10 +49,15 @@
                                 <a class="nav-link active" href="#">Photography</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Signup</a>
+                                <a class="nav-link" href="./signup.html">Signup</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Login</a>
+                                <a class="nav-link" href="./login.html">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./cart.html">
+                                    <span class="icon-cart"></span>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -60,7 +65,6 @@
             </div>
         </nav>
     </header>
-
 
     <!-- Main Section -->
     <main class="main-container">
@@ -108,62 +112,69 @@
                         <li class="mt-2"><b><i class="icon-users me-2"></i>Group:</b> Minimum 2 People</li>
                         <li class="mt-2"><b><i class="icon-map-pin me-2"></i>Location:</b> Panjim</li>
                     </ul>
-                    <p class="my-4 secondary font-secondary">Price: ₹ 1500 per person</p>
-                    <div class="my-5 d-flex flex-wrap gap-3">
-                        <button class="btn btn-secondary">BOOK THIS EXPERIENCE</button>
-                        <button class="btn btn-secondary-outline">GIFT THIS EXPERIENCE </button>
+                    <h5 class="my-4 secondary font-secondary">Price: ₹ 1500 per person</h5>
+                    <div class="my-5 d-flex flex-wrap gap-3" id="experience-btns">
+                        <button class="btn btn-secondary trigger-details">BOOK THIS EXPERIENCE</button>
+                        <button class="btn btn-secondary-outline trigger-details">GIFT THIS EXPERIENCE </button>
                     </div>
-                    <div class="add-inline-cart px-5 pt-5 pb-4">
-                        <header class="add-inline-cart-header d-flex justify-content-between">
-                            <div class="add-inline-cart-headerleft">
-                                <h6 class="font-secondary">Total price: ₹ 4500</h6>
-                                <p>Date: 10, Jan 2024</p>
-                                <p>Participants: 03 participants</p>
+                    <div class="add-inline-cart px-lg-5 pt-lg-5 pb-lg-4 p-4 d-none" id="enter-details">
+                        <header class="add-inline-cart-header row mb-4">
+                            <div class="col-12 col-lg-6">
+                                <h4 class="font-secondary">Total price: ₹ 4500</h4>
+                                <p class="mb-0">Date: 10, Jan 2024</p>
+                                <p class="mb-0">Participants: 03 participants</p>
                             </div>
-                            <div class="add-inline-cart-headerleft d-flex justify-content-end flex-column gap-3">
-                                <button class="btn btn-secondary">ADD TO CART</button>
+                            <div
+                                class="col-12 col-lg-4 offset-lg-2 d-flex justify-content-end flex-column gap-3 mt-4 mt-lg-0">
+                                <button class="btn btn-secondary" id="add-inline-cart">ADD TO CART</button>
                                 <button class="btn btn-secondary-outline">CHECKOUT</button>
                             </div>
                         </header>
                         <hr class="my-3">
-                        <h6 class="font-secondary">How many participants ?</h6>
-                        <select class="form-select my-3" aria-label="">
-                            <option selected>Adults</option>
+                        <h4 class="font-secondary">How many participants ?</h4>
+                        <select class="form-select my-3" aria-label="Select Adults" required>
+                            <option value="" disabled selected hidden>Adults</option>
                             <option value="1">One</option>
                             <option value="2">Two</option>
                             <option value="3">Three</option>
+                            <option value="4">Four</option>
+                            <option value="5">Five</option>
                         </select>
-                        <select class="form-select my-3" aria-label="Default select example">
-                            <option selected>Children</option>
+                        <select class="form-select my-3" aria-label="Select Children" required>
+                            <option value="" disabled selected hidden>Children</option>
                             <option value="1">One</option>
                             <option value="2">Two</option>
                             <option value="3">Three</option>
+                            <option value="4">Four</option>
+                            <option value="5">Five</option>
                         </select>
-                        <h6 class="font-secondary mt-4 mb-3">Pick dates</h6>
-                        <input type="text" class="form-control d-none flatpickr" placeholder="" id="date-selector">
+                        <h4 class="font-secondary mt-4 mb-3">Pick dates</h4>
+                        <div class="form-control-date-picker">
+                            <input type="text" class="form-control d-none flatpickr" placeholder="" id="date-selector">
+                        </div>
                         <hr class="mt-4 mb-3">
                         <h6 class="font-secondary mb-0 text-center">Call us to book: +91-8892076998</h6>
                     </div>
                     <h2 class="font-secondary my-3">Activities</h2>
                     <ul class="activities-list black">
                         <li class="activities-list-item d-flex align-items-center gap-3 my-3">
-                            <i class="d-flex align-items-center justify-content-center icon-navigate"></i>
+                            <i class="d-flex align-items-center justify-content-center icon-arrow-east"></i>
                             <span class="ml-2">Guided Nature Trails</span>
                         </li>
                         <li class="activities-list-item d-flex align-items-center gap-3 my-3">
-                            <i class="d-flex align-items-center justify-content-center icon-navigate"></i>
+                            <i class="d-flex align-items-center justify-content-center icon-arrow-east"></i>
                             <span class="ml-2">Refreshing Pit Stops</span>
                         </li>
                         <li class="activities-list-item d-flex align-items-center gap-3 my-3">
-                            <i class="d-flex align-items-center justify-content-center icon-navigate"></i>
+                            <i class="d-flex align-items-center justify-content-center icon-arrow-east"></i>
                             <span class="ml-2">Scenic Viewpoints</span>
                         </li>
-                        <li class="activities-list-item d-flex align-items-center gap-3 my-3">
-                            <i class="d-flex align-items-center justify-content-center icon-navigate"></i>
+                        <li
+                            class="activities-list-item activities-list-item-optional d-flex align-items-center gap-3 my-3">
+                            <i class="d-flex align-items-center justify-content-center icon-arrow-east"></i>
                             <span class="ml-2">Optional candid photography</span>
                         </li>
                     </ul>
-
                     <div class="my-5">
                         <h2 class="font-secondary">More about the experience</h2>
                         <p class="black">Embarking on a cycling journey through nature is an unparalleled experience
@@ -194,7 +205,7 @@
         <div class="container-fluid">
             <div class="common-booking py-4 py-md-5 d-flex align-items-center">
                 <p class="common-booking-text mb-0">Book a candid photo session in Goa</p>
-                <a class="common-booking-link" href="javascript:void(0)"><i class="icon-navigate"></i></a>
+                <a class="common-booking-link" href="javascript:void(0)"><i class="icon-arrow-east"></i></a>
             </div>
 
             <!-- Divider -->
