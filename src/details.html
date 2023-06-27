@@ -114,20 +114,21 @@
                     </ul>
                     <h5 class="my-4 secondary font-secondary">Price: ₹ 1500 per person</h5>
                     <div class="my-5 d-flex flex-wrap gap-3" id="experience-btns">
-                        <button class="btn btn-secondary trigger-details">BOOK THIS EXPERIENCE</button>
-                        <button class="btn btn-secondary-outline trigger-details">GIFT THIS EXPERIENCE </button>
+                        <button class="btn btn-secondary" id="trigger-book-experience">BOOK THIS EXPERIENCE</button>
+                        <button class="btn btn-secondary-outline" id="trigger-gift-experience">GIFT THIS EXPERIENCE
+                        </button>
                     </div>
-                    <div class="add-inline-cart px-lg-5 pt-lg-5 pb-lg-4 p-4 d-none" id="enter-details">
+                    <div class="add-inline-cart px-lg-5 pt-lg-5 pb-lg-4 p-4 d-none" id="book-details">
                         <header class="add-inline-cart-header row mb-4">
                             <div class="col-12 col-lg-6">
                                 <h4 class="font-secondary">Total price: ₹ 4500</h4>
                                 <p class="mb-0">Date: 10, Jan 2024</p>
-                                <p class="mb-0">Participants: 03 participants</p>
+                                <p class="mb-0">Participants: 03</p>
                             </div>
                             <div
                                 class="col-12 col-lg-4 offset-lg-2 d-flex justify-content-end flex-column gap-3 mt-4 mt-lg-0">
-                                <button class="btn btn-secondary" id="add-inline-cart">ADD TO CART</button>
-                                <button class="btn btn-secondary-outline">CHECKOUT</button>
+                                <button class="btn btn-secondary" id="default-cart">ADD TO CART</button>
+                                <button class="btn btn-secondary-outline" id="default-checkout">CHECKOUT</button>
                             </div>
                         </header>
                         <hr class="my-3">
@@ -153,7 +154,45 @@
                             <input type="text" class="form-control d-none flatpickr" placeholder="" id="date-selector">
                         </div>
                         <hr class="mt-4 mb-3">
-                        <h6 class="font-secondary mb-0 text-center">Call us to book: +91-8892076998</h6>
+                        <h5 class="font-secondary mb-0 text-center call-details">Call us to book: +91-8892076998</h5>
+                    </div>
+                    <div class="add-inline-cart px-lg-5 pt-lg-5 pb-lg-4 p-4 d-none" id="gift-details">
+                        <header class="add-inline-cart-header row mb-4">
+                            <div class="col-12 col-lg-6">
+                                <h4 class="font-secondary">Total price: ₹ 4500</h4>
+                                <p class="mb-0">Participants: 03</p>
+                            </div>
+                            <div class="col-12 col-lg-4 offset-lg-2 d-flex justify-content-lg-end gap-3 mt-4 mt-lg-0">
+                                <button class="btn btn-secondary" id="gift-checkout">CHECKOUT</button>
+                            </div>
+                        </header>
+                        <hr class="my-3">
+                        <h4 class="font-secondary">How many participants ?</h4>
+                        <select class="form-select my-3" aria-label="Select Adults" required>
+                            <option value="" disabled selected hidden>Adults</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option value="4">Four</option>
+                            <option value="5">Five</option>
+                        </select>
+                        <select class="form-select my-3" aria-label="Select Children" required>
+                            <option value="" disabled selected hidden>Children</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option value="4">Four</option>
+                            <option value="5">Five</option>
+                        </select>
+                        <h4 class="font-secondary mt-4 mb-3">Gift receiver E-mail ID?</h4>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email Id">
+                            <p><strong>Note: </strong> We will send an email to the gift receiver after a successful
+                                payment, Recipient, can pick and choose their preferred date to experience, within the
+                                validity period of 1 year. </p>
+                        </div>
+                        <hr class="mt-4 mb-3">
+                        <h5 class="font-secondary mb-0 text-center call-details">Call us to gift: +91-8892076998</h5>
                     </div>
                     <h2 class="font-secondary my-3">Activities</h2>
                     <ul class="activities-list black">

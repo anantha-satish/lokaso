@@ -73,7 +73,7 @@
             <div class="row">
                 <div class="col-12 col-lg-6">
                     <div class="checkout-form">
-                        <h2 class="font-secondary h1">Checkout</h2>
+                        <h2 class="font-secondary h1">Gift Checkout</h2>
                         <h4 class="font-secondary cart-price">
                             Already have an account:
                             <a href="./login.html" class="secondary">Sign in</a>
@@ -90,6 +90,17 @@
                             </div>
                             <div class="col-12 col-sm-6 my-3">
                                 <input type="tel" class="form-control" placeholder="Phone number">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gift-reciever-form">
+                        <h2 class="font-secondary h1">Gift receiver</h2>
+                        <div class="row mt-3 mb-4">
+                            <div class="col-12">
+                                <input type="text" class="form-control" placeholder="Email Id">
+                            </div>
+                            <div class="col-12 my-3">
+                                <textarea class="form-textarea w-100" cols="4" placeholder="Message"></textarea>
                             </div>
                         </div>
                     </div>
@@ -145,32 +156,10 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
-                    <h2 class="font-secondary h1">Order summary</h2>
+                    <h2 class="font-secondary h1">Gift summary</h2>
                     <h4 class="font-secondary secondary cart-price">Total price: ₹ 9000</h4>
-                    <section class="cart-list cart-list-summary">
+                    <section class="cart-list cart-list-checkout">
                         <section class="cart-details collapse show" id="cart-details1">
-                            <div class="row">
-                                <div class="col-12 col-md-4 mb-4 mb-md-0">
-                                    <img src="./assets/images/banner-1.png"
-                                        class="w-100 h-100 objectfit-cover aspect-ratio2">
-                                </div>
-                                <div class="col-12 col-md-8">
-                                    <h4 class="font-secondary">Befriend nature while cycling</h4>
-                                    <ul class="mb-0">
-                                        <li>Date: 10, Jan 2024</li>
-                                        <li>Duration: 03 hours</li>
-                                    </ul>
-                                    <div class="cart-pricing-data">
-                                        <div class="cart-buttons d-flex gap-3">
-                                            <button class="btn btn-sm p-0 btn-link" data-bs-toggle="collapse"
-                                                data-bs-target="#cart-details1" aria-expanded="false">Remove</button>
-                                            <button class="btn btn-sm p-0 btn-link">Edit</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="cart-details collapse show" id="cart-details2">
                             <div class="row">
                                 <div class="col-12 col-md-4 mb-4 mb-md-0">
                                     <img src="./assets/images/banner-1.png"
@@ -178,38 +167,48 @@
                                 </div>
                                 <div class="col-12 col-md-8">
                                     <h4 class="font-secondary">Befriend nature while cycling</h4>
-                                    <ul class="mb-0">
+                                    <ul class="mb-3">
                                         <li>Date: 10, Jan 2024</li>
-                                        <li>Duration: 03 hours</li>
+                                        <li>Participants: 03 participants</li>
                                     </ul>
                                     <div class="cart-pricing-data">
+                                        <strong>Price for experience: 4500</strong>
                                         <div class="cart-buttons d-flex gap-3">
                                             <button class="btn btn-sm p-0 btn-link" data-bs-toggle="collapse"
-                                                data-bs-target="#cart-details2" aria-expanded="false">Remove</button>
+                                                data-bs-target="#cart-details1" aria-expanded="false">Remove</button>
                                             <button class="btn btn-sm p-0 btn-link">Edit</button>
+                                        </div>
+                                    </div>
+                                    <div class="cart-pricing-data collapse show-photo-1">
+                                        <hr class="divider-gray-light my-3">
+                                        <strong>Price for photoshoot: 4500</strong>
+                                        <div class="cart-buttons d-flex gap-3">
+                                            <button class="btn btn-sm p-0 btn-link" data-bs-toggle="collapse"
+                                                data-bs-target=".show-photo-1" aria-expanded="false">Remove</button>
+                                            <button class="btn btn-sm p-0 btn-link">Edit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-9 offset-md-1 mt-4 mt-md-5 collapse show show-photo-1">
+                                    <div class="d-flex align-items-start gap-3">
+                                        <button class="btn btn-secondary" data-bs-toggle="collapse"
+                                            data-bs-target=".show-photo-1" aria-expanded="false">
+                                            <span class="icon-plus"></span>
+                                        </button>
+                                        <div class="photoshoot-info">
+                                            <p class="mb-0">Add on: Candid photo shoot only for this experience •
+                                                <a href="javascript:void(0)" class="text-decoration-none blue-link">
+                                                    <strong>Price: INR 500</strong>
+                                                </a>
+                                            </p>
+                                            <a href="javascript:void(0)" class="secondary" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop">How does it work?</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </section>
                     </section>
-                    <div class="candid-photoshot-addon">
-                        <div class="row">
-                            <div class="col-12 col-md-4 mb-4 mb-md-0 position-relative">
-                                <img src="./assets/images/banner-1.png"
-                                    class="w-100 h-100 objectfit-cover aspect-ratio-landscape">
-                                <button class="btn btn-secondary position-absolute candid-photoshot-button">
-                                    ADD
-                                </button>
-                            </div>
-                            <div class="col-12 col-md-8">
-                                <h4 class="font-secondary">Befriend nature while cycling</h4>
-                                <p>Our photographers captures, best of life moments from your experiences, and make your
-                                    experience memorable for a lifetime.</p>
-                                <b class="secondary">Price: ₹ 4500 per session</b>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

@@ -15,6 +15,10 @@ module.exports = {
         details: path.resolve(__dirname, 'src/js/details.js'),
         checkout: path.resolve(__dirname, 'src/js/checkout.js'),
         cart: path.resolve(__dirname, 'src/js/cart.js'),
+        cardpayment: path.resolve(__dirname, 'src/js/cardpayment.js'),
+        earnings: path.resolve(__dirname, 'src/js/earnings.js'),
+        experiences: path.resolve(__dirname, 'src/js/experiences.js'),
+        influencer: path.resolve(__dirname, 'src/js/influencer.js'),
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -62,12 +66,32 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'checkout.html',
             template: 'src/checkout.html',
-            chunks: ['main', 'bootstrap', 'customselect', 'checkout']
+            chunks: ['main', 'bootstrap', 'customselect', 'checkout', 'cardpayment']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'gift-checkout.html',
+            template: 'src/gift-checkout.html',
+            chunks: ['main', 'bootstrap', 'customselect', 'checkout', 'cardpayment']
         }),
         new HtmlWebpackPlugin({
             filename: 'cart.html',
             template: 'src/cart.html',
             chunks: ['main', 'bootstrap', 'customselect', 'cart']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'earnings.html',
+            template: 'src/earnings.html',
+            chunks: ['main', 'bootstrap', 'customselect', 'earnings']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'experiences.html',
+            template: 'src/experiences.html',
+            chunks: ['main', 'bootstrap', 'customselect', 'experiences']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'influencer-vetting.html',
+            template: 'src/influencer-vetting.html',
+            chunks: ['main', 'bootstrap', 'customselect', 'influencer']
         }),
         new CopyPlugin({
             patterns: [

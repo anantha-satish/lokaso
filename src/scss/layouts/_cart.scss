@@ -7,10 +7,81 @@
             border: 0px solid;
         }
     }
+
+    &-summary {
+        .cart-details {
+            padding: 20px 0 30px;
+        }
+    }
+
+    &-checkout {
+        margin-top: -15px;
+    }
 }
 
 .cart-price {
     @include media-breakpoint-down(md) {
         font-size: 1.25rem;
+    }
+}
+
+.payment-options {
+    display: flex;
+    gap: 20px;
+
+    @include media-breakpoint-down(md) {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+.payment-wrapper {
+    position: relative;
+
+    .payment-gateway {
+        position: absolute;
+        right: 24px;
+        top: 14px;
+        display: flex;
+        gap: 10px;
+
+        @include media-breakpoint-down(md) {
+            right: 20px;
+            top: 74%;
+            background: var(--bs-white);
+            border: 1px solid var(--bs-secondary);
+            padding: 0px 5px 3px;
+        }
+
+        &-link {
+            text-decoration: none;
+        }
+
+        &-img {
+            @include media-breakpoint-down(md) {
+                width: 30px;
+            }
+        }
+    }
+}
+
+.candid-photoshot-addon {
+    background-color: var(--bs-gray-200);
+    border: 1px solid var(--bs-gray-300);
+    padding: 15px;
+
+    .candid-photoshot-button {
+        bottom: 0;
+        right: 0;
+
+        @include media-breakpoint-down(md) {
+            right: 12px;
+        }
+    }
+}
+
+.call-details {
+    @include media-breakpoint-down(md) {
+        font-size: 1.125rem;
     }
 }

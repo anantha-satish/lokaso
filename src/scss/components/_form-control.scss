@@ -21,6 +21,14 @@
     &::-moz-placeholder {
         color: var(--bs-gray-500);
     }
+
+    &.card-input {
+        padding-right: 180px;
+
+        @include media-breakpoint-down(md) {
+            padding-right: 10px;
+        }
+    }
 }
 
 .form-check-input[type="checkbox"] {
@@ -76,5 +84,103 @@
 
     option {
         color: var(--bs-secondary);
+    }
+}
+
+/***
+Custom Radio Buttons
+***/
+.form-check-radio {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.form-check-radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.form-check-label-radio {
+    position: relative;
+    cursor: pointer;
+
+    @include media-breakpoint-down(md) {
+        font-size: 0.875em;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 3px;
+        left: -34px;
+        height: 24px;
+        width: 24px;
+        background-color: var(--bs-white);
+        border: 1px solid var(--bs-black);
+        border-radius: 50%;
+    }
+}
+
+.form-check-radio:hover input~.form-check-label-radio:before {
+    background-color: var(--bs-white);
+}
+
+.form-check-radio input:checked~.form-check-label-radio:before {
+    background-color: var(--bs-white);
+}
+
+.form-check-label-radio:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.form-check-radio input:checked~.form-check-label-radio:after {
+    display: block;
+}
+
+.form-check-radio .form-check-label-radio:after {
+    top: 7px;
+    left: -30px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--bs-black);
+}
+
+.form-textarea {
+    min-height: 160px;
+    padding: 15px 10px;
+
+    &::-webkit-input-placeholder {
+        color: var(--bs-gray-500);
+    }
+
+    &::-moz-placeholder {
+        color: var(--bs-gray-500);
+    }
+
+    &::-ms-input-placeholder {
+        color: var(--bs-gray-500);
+    }
+
+    &::-moz-placeholder {
+        color: var(--bs-gray-500);
+    }
+
+    &:focus,
+    &:focus {
+        outline: none;
+        box-shadow: none;
     }
 }
