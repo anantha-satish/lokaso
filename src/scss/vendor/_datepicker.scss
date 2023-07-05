@@ -18,6 +18,7 @@
     &--navigation {
         background-color: var(--bs-white);
         margin-bottom: 20px;
+
         @include media-breakpoint-down(lg) {
             margin-bottom: 10px;
         }
@@ -75,13 +76,24 @@
 
         &.-disabled- {
             color: var(--bs-gray-700);
-            opacity: 0.3;
+            opacity: 0.35;
             pointer-events: none;
+            filter: blur(1px);
+            cursor: not-allowed;
         }
 
         &.-focus- {
             background-color: var(--bs-white);
             border: 1px dashed var(--gray-600);
+        }
+
+        &.-current- {
+            color: var(--bs-gray-700);
+            filter: opacity(0.5);
+
+            &.-selected- {
+                filter: opacity(1);
+            }
         }
     }
 }

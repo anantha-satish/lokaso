@@ -31,8 +31,32 @@
             font-size: 1.25rem;
         }
 
-        &.active {
-            background-color: var(--bs-primary);
+        &:not(.not-text) {
+
+            &.active,
+            &:hover {
+                background-color: var(--bs-primary);
+                color: var(--bs-white);
+            }
+        }
+
+        &.not-text {
+            position: relative;
+
+            .cart-notch {
+                position: absolute;
+                left: 24px;
+                top: 5px;
+                width: 12px;
+                height: 12px;
+                background-color: var(--bs-secondary);
+                border-radius: 50%;
+                border: 2px solid var(--bs-white);
+            }
+
+            &:hover {
+                color: var(--bs-secondary);
+            }
         }
     }
 

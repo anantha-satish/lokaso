@@ -14,11 +14,12 @@ const localeEn = {
 
 new AirDatepicker("#date-selector", {
     "inline": 'true',
-    "multipleDates": true,
     "locale": localeEn,
+    "minDate": new Date(),
     "firstDay": 1,
     "showOtherMonths": false,
     "selectOtherMonths": false,
     "prevHtml": "<span class='icon-chevron-left'></span>",
-    "nextHtml": "<span class='icon-chevron-right'></span>"
+    "nextHtml": "<span class='icon-chevron-right'></span>",
+    "disableNavWhenOutOfRange": false
 });

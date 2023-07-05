@@ -8,75 +8,18 @@
 </head>
 
 <body>
-    <!-- Header Section -->
-    <header class="common-header fixed-top bg-white">
-        <nav class="navbar navbar-expand-lg" aria-label="Offcanvas navbar large">
-            <div class="container-fluid">
-                <h1 class="navbar-brand">
-                    <a class="navbar-brand-link" href="./index.html">
-                        <img class="w-100" src="./assets/images/logo.png" alt="Lokaso" />
-                    </a>
-                </h1>
-                <div class="custom-select">
-                    <select>
-                        <option value="0">Select Location:</option>
-                        <option value="1" selected>Goa</option>
-                        <option value="2">Bengaluru</option>
-                        <option value="3">Andaman</option>
-                        <option value="4">Mysore</option>
-                    </select>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar2" aria-playsinline="offcanvasNavbar2"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end text-bg-light" tabindex="-1" id="offcanvasNavbar2"
-                    aria-labelledby="offcanvasNavbar2Label">
-                    <div class="offcanvas-header">
-                        <a class="navbar-brand" href="#">
-                            <img class="w-100" src="./assets/images/logo.png" alt="Lokaso" />
-                        </a>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#">Photography</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./signup.html">Signup</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./login.html">Login</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./cart.html">
-                                    <span class="icon-cart"></span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
 
     <!-- Main Section -->
-    <main class="main-container">
+    <main class="main-container pt-3 pt-sm-5">
         <div class="container-fluid mb-4">
-            <hr class="divider-dark mb-4 pb-sm-3">
             <div class="container container-fixed">
                 <header class="add-inline-cart-header row">
-                    <div class="col-7">
+                    <div class="col-12 col-sm-7 mb-3 mb-sm-0">
                         <h2 class="font-secondary h1">My cart</h2>
                         <h4 class="font-secondary secondary cart-price">Total price: ₹ 9000</h4>
                     </div>
-                    <div class="col-5 d-flex justify-content-end align-items-start">
+                    <div class="col-12 col-sm-5 d-flex justify-content-lg-end align-items-start gap-3">
+                        <button class="btn btn-secondary-outline" id="cancel-carting">CANCEL</button>
                         <button class="btn btn-secondary">CHECKOUT</button>
                     </div>
                 </header>
@@ -104,7 +47,7 @@
                                     <div class="cart-buttons d-flex gap-3">
                                         <button class="btn btn-sm p-0 btn-link" data-bs-toggle="collapse"
                                             data-bs-target="#cart-details1" aria-expanded="false">Remove</button>
-                                        <button class="btn btn-sm p-0 btn-link">Edit</button>
+                                        <button class="btn btn-sm p-0 btn-link btn-go-details">Edit</button>
                                     </div>
                                 </div>
                                 <div class="cart-pricing-data collapse show-photo-1">
@@ -113,7 +56,6 @@
                                     <div class="cart-buttons d-flex gap-3">
                                         <button class="btn btn-sm p-0 btn-link" data-bs-toggle="collapse"
                                             data-bs-target=".show-photo-1" aria-expanded="false">Remove</button>
-                                        <button class="btn btn-sm p-0 btn-link">Edit</button>
                                     </div>
                                 </div>
                             </div>
@@ -159,7 +101,7 @@
                                     <div class="cart-buttons d-flex gap-3">
                                         <button class="btn btn-sm p-0 btn-link" data-bs-toggle="collapse"
                                             data-bs-target="#cart-details2" aria-expanded="false">Remove</button>
-                                        <button class="btn btn-sm p-0 btn-link">Edit</button>
+                                        <button class="btn btn-sm p-0 btn-link btn-go-details">Edit</button>
                                     </div>
                                 </div>
                                 <div class="cart-pricing-data collapse show-photo-2">
@@ -168,7 +110,6 @@
                                     <div class="cart-buttons d-flex gap-3">
                                         <button class="btn btn-sm p-0 btn-link" data-bs-toggle="collapse"
                                             data-bs-target=".show-photo-2" aria-expanded="false">Remove</button>
-                                        <button class="btn btn-sm p-0 btn-link">Edit</button>
                                     </div>
                                 </div>
                             </div>
@@ -214,7 +155,7 @@
                                     <div class="cart-buttons d-flex gap-3">
                                         <button class="btn btn-sm p-0 btn-link" data-bs-toggle="collapse"
                                             data-bs-target="#cart-details3" aria-expanded="false">Remove</button>
-                                        <button class="btn btn-sm p-0 btn-link">Edit</button>
+                                        <button class="btn btn-sm p-0 btn-link btn-go-details">Edit</button>
                                     </div>
                                 </div>
                                 <div class="cart-pricing-data collapse show-photo-3">
@@ -223,7 +164,6 @@
                                     <div class="cart-buttons d-flex gap-3">
                                         <button class="btn btn-sm p-0 btn-link" data-bs-toggle="collapse"
                                             data-bs-target=".show-photo-3" aria-expanded="false">Remove</button>
-                                        <button class="btn btn-sm p-0 btn-link">Edit</button>
                                     </div>
                                 </div>
                             </div>

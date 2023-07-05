@@ -63,10 +63,12 @@
 
         &-circle {
             position: absolute;
-            left: 0;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            margin-top: -1px;
         }
 
         &-text {
@@ -74,11 +76,6 @@
             height: 62px;
             position: relative;
             z-index: 1;
-
-            @include media-breakpoint-down(md) {
-                width: 38px;
-                height: 38px;
-            }
         }
     }
 
