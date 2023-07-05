@@ -4,6 +4,7 @@
 
 .common-booking {
     gap: 20px;
+    cursor: pointer;
 
     &-text {
         font-family: var(--bs-font-seconary-serif);
@@ -12,6 +13,7 @@
         letter-spacing: 0.5px;
         line-height: 1.25;
         max-width: 80%;
+        transition: all ease-in-out 0.35s;
 
         @include media-breakpoint-down(md) {
             font-size: 1.75em;
@@ -29,6 +31,17 @@
         background: var(--bs-light-green);
         font-size: 1.25rem;
         color: var(--bs-primary);
+        transition: all ease-in-out 0.35s;
+    }
+
+    &:hover {
+        .common-booking-text {
+            color: var(--bs-white);
+        }
+
+        .common-booking-link {
+            background: var(--bs-white);
+        }
     }
 }
 
@@ -37,7 +50,7 @@
 
     &-title {
         color: var(--bs-white);
-        font-size: 0.75rem;
+        font-size: 0.875rem;
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 0.5px;
@@ -50,7 +63,7 @@
     }
 
     .footer-link {
-        font-size: 0.75rem;
+        font-size: 0.875rem;
         color: var(--bs-gray-300);
         text-decoration: none;
         margin-top: 7px;
