@@ -71,145 +71,57 @@
         <div class="container-fluid mb-4">
             <hr class="divider-dark mb-4 pb-sm-3">
             <div class="row">
-                <div class="col-12 col-lg-6">
-                    <div class="checkout-form">
-                        <h2 class="font-secondary h1">Checkout</h2>
-                        <h4 class="font-secondary cart-price">
-                            Already have an account:
-                            <a href="./login.html" class="secondary">Sign in</a>
-                        </h4>
-                        <div class="row mt-3 mb-4">
-                            <div class="col-12 col-sm-6 my-3">
-                                <input type="text" class="form-control" placeholder="First name">
-                            </div>
-                            <div class="col-12 col-sm-6 my-3">
-                                <input type="text" class="form-control" placeholder="Last name">
-                            </div>
-                            <div class="col-12 col-sm-6 my-3">
-                                <input type="email" class="form-control" placeholder="First name">
-                            </div>
-                            <div class="col-12 col-sm-6 my-3">
-                                <input type="tel" class="form-control" placeholder="Phone number">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="payment-form mb-5 mb-lg-0">
-                        <h2 class="font-secondary h1">Payment</h2>
-                        <div class="payment-options font-secondary mt-3">
-                            <div class="form-check form-check-radio form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="credit-card"
-                                    value="credit-card">
-                                <label class="form-check-label form-check-label-radio" for="credit-card">Credit
-                                    Card</label>
-                            </div>
-                            <div class="form-check form-check-radio form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="upi"
-                                    value="upi">
-                                <label class="form-check-label form-check-label-radio" for="upi">UPI</label>
-                            </div>
-                            <div class="form-check form-check-radio form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="bank-account"
-                                    value="bank-account">
-                                <label class="form-check-label form-check-label-radio" for="bank-account">Bank
-                                    Account</label>
-                            </div>
-                        </div>
+                <div class="col-12 offset-lg-2 col-lg-8">
+                    <h1 class="font-secondary">My Earnings</h1>
+                </div>
+            </div>
+        </div>
+        <div class="coupon-container mt-3 mb-4">
+            <div class="container-fluid">
+                <div class="row py-4">
+                    <div class="col-12 offset-lg-2 col-lg-8">
                         <div class="row">
-                            <div class="col-12 my-3 payment-wrapper">
-                                <input type="text" maxlength="19" class="form-control cc-number-input card-input"
-                                    placeholder="0000  0000  0000  0000">
-                                <div class="payment-gateway">
-                                    <a href="javascript:void(0)" class="payment-gateway-link">
-                                        <img class="payment-gateway-img" src="./assets/images/visa.png" alt="visa">
-                                    </a>
-                                    <a href="javascript:void(0)" class="payment-gateway-link">
-                                        <img class="payment-gateway-img" src="./assets/images/master-card.png"
-                                            alt="visa">
-                                    </a>
-                                    <a href="javascript:void(0)" class="payment-gateway-link">
-                                        <img class="payment-gateway-img" src="./assets/images/amex.png" alt="visa">
-                                    </a>
-                                </div>
+                            <div class="col-12 col-md-8">
+                                <input type="text" class="form-control" placeholder="COPUON CODE">
+                                <p class="hint-text">*Copy and paste this COUPON code in your Social media feeds & earn money</p>
                             </div>
-                            <div class="col-6 my-3">
-                                <input type="text" maxlength="5" class="form-control cc-expiry-input"
-                                    placeholder="MM / YY">
-                            </div>
-                            <div class="col-6 my-3">
-                                <input type="text" maxlength="3" class="form-control cc-cvc-input" placeholder="CVC">
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-secondary w-100 py-3">PAY FOR EXPERIENCE</button>
+                            <div class="col-12 col-md-4">
+                                <button class="btn btn-secondary py-3">GENERATE COUPON CODE</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6">
-                    <h2 class="font-secondary h1">Order summary</h2>
-                    <h4 class="font-secondary secondary cart-price">Total price: ₹ 9000</h4>
-                    <section class="cart-list cart-list-summary">
-                        <section class="cart-details collapse show" id="cart-details1">
-                            <div class="row">
-                                <div class="col-12 col-md-4 mb-4 mb-md-0">
-                                    <img src="./assets/images/banner-1.png"
-                                        class="w-100 h-100 objectfit-cover aspect-ratio2">
-                                </div>
-                                <div class="col-12 col-md-8">
-                                    <h4 class="font-secondary">Befriend nature while cycling</h4>
-                                    <ul class="mb-0">
-                                        <li>Date: 10, Jan 2024</li>
-                                        <li>Duration: 03 hours</li>
-                                    </ul>
-                                    <div class="cart-pricing-data">
-                                        <div class="cart-buttons d-flex gap-3">
-                                            <button class="btn btn-sm p-0 btn-link" data-bs-toggle="collapse"
-                                                data-bs-target="#cart-details1" aria-expanded="false">Remove</button>
-                                            <button class="btn btn-sm p-0 btn-link">Edit</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="cart-details collapse show" id="cart-details2">
-                            <div class="row">
-                                <div class="col-12 col-md-4 mb-4 mb-md-0">
-                                    <img src="./assets/images/banner-1.png"
-                                        class="w-100 h-100 objectfit-cover aspect-ratio-landscape">
-                                </div>
-                                <div class="col-12 col-md-8">
-                                    <h4 class="font-secondary">Befriend nature while cycling</h4>
-                                    <ul class="mb-0">
-                                        <li>Date: 10, Jan 2024</li>
-                                        <li>Duration: 03 hours</li>
-                                    </ul>
-                                    <div class="cart-pricing-data">
-                                        <div class="cart-buttons d-flex gap-3">
-                                            <button class="btn btn-sm p-0 btn-link" data-bs-toggle="collapse"
-                                                data-bs-target="#cart-details2" aria-expanded="false">Remove</button>
-                                            <button class="btn btn-sm p-0 btn-link">Edit</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </section>
-                    <div class="candid-photoshot-addon">
-                        <div class="row">
-                            <div class="col-12 col-md-4 mb-4 mb-md-0 position-relative">
-                                <img src="./assets/images/banner-1.png"
-                                    class="w-100 h-100 objectfit-cover aspect-ratio-landscape">
-                                <button class="btn btn-secondary position-absolute candid-photoshot-button">
-                                    ADD
-                                </button>
-                            </div>
-                            <div class="col-12 col-md-8">
-                                <h4 class="font-secondary">Befriend nature while cycling</h4>
-                                <p>Our photographers captures, best of life moments from your experiences, and make your
-                                    experience memorable for a lifetime.</p>
-                                <b class="secondary">Price: ₹ 4500 per session</b>
-                            </div>
-                        </div>
-                    </div>
+            </div>
+        </div>
+        <div class="container-fluid mb-4">
+            <div class="row">
+                <div class="col-12 offset-lg-2 col-lg-8">
+                    <ul class="earnings-list">
+                        <li class="d-flex justify-content-between py-4 px-4 heading">
+                            <p>My earnings</p>
+                            <p class="font-secondary">₹ 1,50,000 Total</p>
+                        </li>
+                        <li class="d-flex justify-content-between py-4 px-4">
+                            <p>Savi 8675 •  5 Bookings</p>
+                            <p class="font-secondary">5 X 300 = ₹ 1500</p>
+                        </li>
+                        <li class="d-flex justify-content-between py-4 px-4">
+                            <p>Savi 8675 •  5 Bookings</p>
+                            <p class="font-secondary">5 X 300 = ₹ 1500</p>
+                        </li>
+                        <li class="d-flex justify-content-between py-4 px-4">
+                            <p>Savi 8675 •  5 Bookings</p>
+                            <p class="font-secondary">5 X 300 = ₹ 1500</p>
+                        </li>
+                        <li class="d-flex justify-content-between py-4 px-4">
+                            <p>Savi 8675 •  5 Bookings</p>
+                            <p class="font-secondary">5 X 300 = ₹ 1500</p>
+                        </li>
+                        <li class="d-flex justify-content-between py-4 px-4">
+                            <p>Savi 8675 •  5 Bookings</p>
+                            <p class="font-secondary">5 X 300 = ₹ 1500</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
