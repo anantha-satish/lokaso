@@ -93,6 +93,31 @@ module.exports = {
             template: 'src/influencer-vetting.html',
             chunks: ['main', 'bootstrap', 'customselect', 'influencer']
         }),
+        new HtmlWebpackPlugin({
+            filename: 'details-postlogin.html',
+            template: 'src/details-postlogin.html',
+            chunks: ['main', 'bootstrap', 'customselect', 'details']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'influencer-postlogin.html',
+            template: 'src/influencer-postlogin.html',
+            chunks: ['main', 'bootstrap', 'customselect']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'influencer-experiences.html',
+            template: 'src/influencer-experiences.html',
+            chunks: ['main', 'bootstrap', 'customselect']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'password.html',
+            template: 'src/password.html',
+            chunks: ['main', 'bootstrap', 'customselect']
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'password-forgot.html',
+            template: 'src/password-forgot.html',
+            chunks: ['main', 'bootstrap', 'customselect']
+        }),
         new CopyPlugin({
             patterns: [
                 {
