@@ -79,3 +79,86 @@
         box-shadow: none;
     }
 }
+
+.profile-dropdown {
+
+    &-toggle {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 0 5px 0 15px;
+
+        &:after {
+            display: none;
+        }
+    }
+
+    &-prefix {
+        color: var(--bs-white);
+        width: 36px;
+        height: 36px;
+        font-size: 0.875em;
+        display: inline-grid;
+        align-content: center;
+        justify-content: center;
+
+        &.profile-member {
+            background: rgb(71, 84, 103);
+            background: linear-gradient(73deg, rgba(71, 84, 103, 1) 0%, rgba(102, 112, 133, 1) 100%);
+        }
+
+        &.profile-influencer {
+            background: rgb(127, 86, 217);
+            background: linear-gradient(73deg, rgba(127, 86, 217, 1) 0%, rgba(158, 119, 237, 1) 100%);
+        }
+    }
+
+    &-menu {
+        background-color: var(--bs-gray-100);
+        border-color: var(--bs-secondary);
+        padding: 5px 15px 5px;
+        font-size: 0.875em;
+        box-shadow: none;
+
+        .profile-status {
+            text-align: right;
+            color: var(--bs-purple);
+            margin: 0;
+            padding: 3px 0 7px;
+            font-size: 0.75em;
+            font-weight: 500;
+        }
+
+        .dropdown-item {
+            padding: 12px 45px 12px 0;
+            position: relative;
+            color: var(--bs-primary);
+
+            .icon-chevron-right {
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            &:not(:first-child) {
+                border-top: 1px solid var(--bs-gray-300);
+            }
+
+            &:hover,
+            &:focus {
+                background-color: transparent;
+                color: var(--bs-secondary);
+            }
+        }
+    }
+
+    &-name {
+        color: var(--bs-secondary);
+
+        &:hover {
+            color: var(--bs-black);
+        }
+    }
+}
