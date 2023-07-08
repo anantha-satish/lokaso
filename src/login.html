@@ -10,8 +10,8 @@
 <body>
     <main class="container-fluid px-0">
         <div class="row mx-0 align-items-center row-equal">
-            <div class="col-xl-6">
-                <form class="row g-3 needs-validation login-form mx-auto" novalidate>
+            <div class="col-lg-6">
+                <form id="user-login" class="row g-3 needs-validation login-form mx-auto" novalidate>
                     <header class="col-12">
                         <a class="form-link" href="./index.html">
                             <img class="form-logo" src="./assets/images/logo.png" alt="Lokaso">
@@ -20,14 +20,19 @@
                         <h6 class="form-info">Welcome back! Please enter your details.</h6>
                     </header>
                     <div class="col-12">
-                        <input type="email" class="form-control" aria-describedby="inputGroupPrepend"
-                            placeholder="Enter your email" required>
+                        <div class="form-floating">
+                            <input type="email" class="form-control" id="emailid" placeholder="Enter your email">
+                            <label for="emailid" class="floating-label">Enter your email</label>
+                        </div>
                         <div class="invalid-feedback">
                             Please valid email id.
                         </div>
                     </div>
                     <div class="col-12">
-                        <input type="password" class="form-control" placeholder="Password" required>
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="password" placeholder="Password">
+                            <label for="password" class="floating-label">Password</label>
+                        </div>
                         <div class="invalid-feedback">
                             Please provide a valid password.
                         </div>
@@ -42,7 +47,7 @@
                                 You must agree before submitting.
                             </div>
                         </div>
-                        <a href="javascript:void(0)" class="form-link">
+                        <a href="./password-forgot.html" class="form-link">
                             Forgot password
                         </a>
                     </div>
@@ -58,7 +63,7 @@
                     </div>
                 </form>
             </div>
-            <div class="col-xl-6 px-0 d-none d-xl-block">
+            <div class="col-lg-6 px-0 d-none d-lg-block">
                 <div class="experience-category experience-category-vh position-relative">
                     <video class="experience-category-video w-100" playsinline poster="./assets/images/banner-1.png"
                         muted autoplay loop>
@@ -68,7 +73,7 @@
                         Your browser does not support the video tag.
                     </video>
                     <div class="experience-category-overlay position-absolute">
-                        <div id="login-carousel" class="carousel slide">
+                        <div id="login-carousel" class="carousel info-carousel slide">
                             <div class="login-btns">
                                 <button class="login-btn login-prev" type="button" data-bs-target="#login-carousel"
                                     data-bs-slide="prev">

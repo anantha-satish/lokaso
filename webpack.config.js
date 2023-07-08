@@ -19,6 +19,7 @@ module.exports = {
         earnings: path.resolve(__dirname, 'src/js/earnings.js'),
         experiences: path.resolve(__dirname, 'src/js/experiences.js'),
         influencer: path.resolve(__dirname, 'src/js/influencer.js'),
+        form: path.resolve(__dirname, 'src/js/form.js'),
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -46,17 +47,17 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'login.html',
             template: 'src/login.html',
-            chunks: ['main', 'bootstrap']
+            chunks: ['main', 'bootstrap', 'form']
         }),
         new HtmlWebpackPlugin({
             filename: 'signup.html',
             template: 'src/signup.html',
-            chunks: ['main', 'bootstrap']
+            chunks: ['main', 'bootstrap', 'form']
         }),
         new HtmlWebpackPlugin({
             filename: 'influencer-signup.html',
             template: 'src/influencer-signup.html',
-            chunks: ['main', 'bootstrap']
+            chunks: ['main', 'bootstrap', 'form']
         }),
         new HtmlWebpackPlugin({
             filename: 'comming-soon.html',
@@ -96,7 +97,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'details-postlogin.html',
             template: 'src/details-postlogin.html',
-            chunks: ['main', 'bootstrap', 'customselect', 'details']
+            chunks: ['main', 'bootstrap', 'customselect', 'datepicker', 'details']
         }),
         new HtmlWebpackPlugin({
             filename: 'influencer-postlogin.html',
@@ -111,12 +112,12 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'password.html',
             template: 'src/password.html',
-            chunks: ['main', 'bootstrap', 'customselect']
+            chunks: ['main', 'bootstrap', 'customselect', 'form']
         }),
         new HtmlWebpackPlugin({
             filename: 'password-forgot.html',
             template: 'src/password-forgot.html',
-            chunks: ['main', 'bootstrap', 'customselect']
+            chunks: ['main', 'bootstrap', 'customselect', 'form']
         }),
         new CopyPlugin({
             patterns: [

@@ -64,6 +64,10 @@
                                         Password
                                         <span class="icon-chevron-right"></span>
                                     </a>
+                                    <a class="dropdown-item" href="./index.html">
+                                        Logout
+                                        <span class="icon-chevron-right"></span>
+                                    </a>
                                 </div>
                             </li>
                             <li class="nav-item">
@@ -84,6 +88,7 @@
             <hr class="divider-dark mb-4 pb-md-3">
             <div class="row">
                 <div class="col-md-6">
+                    <div class="dummy-height"></div>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="experience-category mb-4">
@@ -121,8 +126,13 @@
                         journey</p>
                     <ul class="black">
                         <li class="mt-2"><b><i class="icon-clock me-2"></i>Duration:</b> 3hrs 26minutes</li>
-                        <li class="mt-2"><b><i class="icon-users me-2"></i>Group:</b> Minimum 2 People</li>
-                        <li class="mt-2"><b><i class="icon-map-pin me-2"></i>Location:</b> Panjim</li>
+                        <li class="mt-2"><b><i class="icon-marker-pin me-2"></i>Meeting point:</b> Panjim, near
+                            the tea shop</li>
+                        <li class="mt-2"><b><i class="icon-watch me-2"></i>Meeting time:</b> 10:30 AM</li>
+                        <li class="mt-2"><b><i class="icon-experience-manager me-2"></i>Experience Manager:</b> Manoj
+                        </li>
+                        <li class="mt-2"><b><i class="icon-calling me-2"></i>Contact number:</b> +91-8892076998</li>
+                        <li class="mt-2"><b><i class="icon-camera me-2"></i>Candid photoshoot:</b> Yes</li>
                     </ul>
                     <h5 class="my-4 secondary font-secondary">Price: ₹ 1500 per person</h5>
                     <div class="my-5 d-flex flex-wrap gap-3" id="experience-btns">
@@ -145,22 +155,30 @@
                         </header>
                         <hr class="my-3">
                         <h4 class="font-secondary">How many participants ?</h4>
-                        <select class="form-select my-3" aria-label="Select Adults" required>
-                            <option value="" disabled selected hidden>Adults</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                            <option value="4">Four</option>
-                            <option value="5">Five</option>
-                        </select>
-                        <select class="form-select my-3" aria-label="Select Children" required>
-                            <option value="" disabled selected hidden>Children</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                            <option value="4">Four</option>
-                            <option value="5">Five</option>
-                        </select>
+                        <div class="form-floating-select">
+                            <select class="form-select active my-3" aria-label="Select Adults" placeholder="Adults"
+                                required id="select-audlts1">
+                                <option value="" disabled selected hidden></option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">Four</option>
+                                <option value="5">Five</option>
+                            </select>
+                            <label for="select-audlts1" class="floating-label">Adults</label>
+                        </div>
+                        <div class="form-floating-select">
+                            <select class="form-select my-3" aria-label="Select Children" placeholder="Children"
+                                required id="select-child1">
+                                <option value="" disabled selected hidden></option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">Four</option>
+                                <option value="5">Five</option>
+                            </select>
+                            <label for="select-child1" class="floating-label">Children</label>
+                        </div>
                         <h4 class="font-secondary mt-4 mb-3">Pick dates</h4>
                         <div class="form-control-date-picker">
                             <input type="text" class="form-control d-none flatpickr" placeholder="" id="date-selector">
@@ -180,25 +198,36 @@
                         </header>
                         <hr class="my-3">
                         <h4 class="font-secondary">How many participants ?</h4>
-                        <select class="form-select my-3" aria-label="Select Adults" required>
-                            <option value="" disabled selected hidden>Adults</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                            <option value="4">Four</option>
-                            <option value="5">Five</option>
-                        </select>
-                        <select class="form-select my-3" aria-label="Select Children" required>
-                            <option value="" disabled selected hidden>Children</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                            <option value="4">Four</option>
-                            <option value="5">Five</option>
-                        </select>
+                        <div class="form-floating-select">
+                            <select class="form-select active my-3" aria-label="Select Adults" placeholder="Adults"
+                                required id="select-audlts2">
+                                <option value="" disabled selected hidden></option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">Four</option>
+                                <option value="5">Five</option>
+                            </select>
+                            <label for="select-audlts2" class="floating-label">Adults</label>
+                        </div>
+                        <div class="form-floating-select">
+                            <select class="form-select my-3" aria-label="Select Children" placeholder="Children"
+                                required id="select-child2">
+                                <option value="" disabled selected hidden></option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">Four</option>
+                                <option value="5">Five</option>
+                            </select>
+                            <label for="select-child2" class="floating-label">Children</label>
+                        </div>
                         <h4 class="font-secondary mt-4 mb-3">Gift receiver E-mail ID?</h4>
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Email Id">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="emailid" placeholder="E-mail ID">
+                                <label for="emailid" class="floating-label">E-mail ID</label>
+                            </div>
                             <p><strong>Note: </strong> We will send an email to the gift receiver after a successful
                                 payment, Recipient, can pick and choose their preferred date to experience, within the
                                 validity period of 1 year. </p>

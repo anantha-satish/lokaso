@@ -72,6 +72,7 @@
             <hr class="divider-dark mb-4 pb-md-3">
             <div class="row">
                 <div class="col-md-6">
+                    <div class="dummy-height"></div>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="experience-category mb-4">
@@ -133,22 +134,30 @@
                         </header>
                         <hr class="my-3">
                         <h4 class="font-secondary">How many participants ?</h4>
-                        <select class="form-select my-3" aria-label="Select Adults" required>
-                            <option value="" disabled selected hidden>Adults</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                            <option value="4">Four</option>
-                            <option value="5">Five</option>
-                        </select>
-                        <select class="form-select my-3" aria-label="Select Children" required>
-                            <option value="" disabled selected hidden>Children</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                            <option value="4">Four</option>
-                            <option value="5">Five</option>
-                        </select>
+                        <div class="form-floating-select">
+                            <select class="form-select active my-3" aria-label="Select Adults" placeholder="Adults"
+                                required id="select-audlts1">
+                                <option value="" disabled selected hidden></option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">Four</option>
+                                <option value="5">Five</option>
+                            </select>
+                            <label for="select-audlts1" class="floating-label">Adults</label>
+                        </div>
+                        <div class="form-floating-select">
+                            <select class="form-select my-3" aria-label="Select Children" placeholder="Children"
+                                required id="select-child1">
+                                <option value="" disabled selected hidden></option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">Four</option>
+                                <option value="5">Five</option>
+                            </select>
+                            <label for="select-child1" class="floating-label">Children</label>
+                        </div>
                         <h4 class="font-secondary mt-4 mb-3">Pick dates</h4>
                         <div class="form-control-date-picker">
                             <input type="text" class="form-control d-none flatpickr" placeholder="" id="date-selector">
@@ -168,25 +177,36 @@
                         </header>
                         <hr class="my-3">
                         <h4 class="font-secondary">How many participants ?</h4>
-                        <select class="form-select my-3" aria-label="Select Adults" required>
-                            <option value="" disabled selected hidden>Adults</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                            <option value="4">Four</option>
-                            <option value="5">Five</option>
-                        </select>
-                        <select class="form-select my-3" aria-label="Select Children" required>
-                            <option value="" disabled selected hidden>Children</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                            <option value="4">Four</option>
-                            <option value="5">Five</option>
-                        </select>
+                        <div class="form-floating-select">
+                            <select class="form-select active my-3" aria-label="Select Adults" placeholder="Adults"
+                                required id="select-audlts2">
+                                <option value="" disabled selected hidden></option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">Four</option>
+                                <option value="5">Five</option>
+                            </select>
+                            <label for="select-audlts2" class="floating-label">Adults</label>
+                        </div>
+                        <div class="form-floating-select">
+                            <select class="form-select my-3" aria-label="Select Children" placeholder="Children"
+                                required id="select-child2">
+                                <option value="" disabled selected hidden></option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">Four</option>
+                                <option value="5">Five</option>
+                            </select>
+                            <label for="select-child2" class="floating-label">Children</label>
+                        </div>
                         <h4 class="font-secondary mt-4 mb-3">Gift receiver E-mail ID?</h4>
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Email Id">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="emailid" placeholder="E-mail ID">
+                                <label for="emailid" class="floating-label">E-mail ID</label>
+                            </div>
                             <p><strong>Note: </strong> We will send an email to the gift receiver after a successful
                                 payment, Recipient, can pick and choose their preferred date to experience, within the
                                 validity period of 1 year. </p>

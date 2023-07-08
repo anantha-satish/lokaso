@@ -29,8 +29,20 @@
             padding-right: 10px;
         }
     }
+
     &.social-input {
         padding-left: 50px;
+    }
+
+    &.form-textarea {
+        min-height: 160px;
+        padding: 15px 10px;
+
+        &:focus,
+        &:focus {
+            outline: none;
+            box-shadow: none;
+        }
     }
 }
 
@@ -75,7 +87,7 @@
 
 .form-select {
     box-shadow: none;
-    height: 50px;
+    height: 58px;
 
     &:required:invalid {
         color: var(--bs-gray-500);
@@ -161,29 +173,30 @@ Custom Radio Buttons
     background: var(--bs-black);
 }
 
-.form-textarea {
-    min-height: 160px;
-    padding: 15px 10px;
+/***
+Floating Label
+**/
+.floating-label {
+    color: var(--bs-gray-500);
+    font-weight: 500;
+}
 
-    &::-webkit-input-placeholder {
-        color: var(--bs-gray-500);
+.form-floating-select {
+    position: relative;
+
+    .floating-label {
+        pointer-events: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        padding: 15px 12px;
+        transition: all ease-in-out 0.1s;
     }
 
-    &::-moz-placeholder {
-        color: var(--bs-gray-500);
-    }
-
-    &::-ms-input-placeholder {
-        color: var(--bs-gray-500);
-    }
-
-    &::-moz-placeholder {
-        color: var(--bs-gray-500);
-    }
-
-    &:focus,
-    &:focus {
-        outline: none;
-        box-shadow: none;
+    .form-select:valid:not(:disabled)~.floating-label {
+        height: 20px;
+        padding: 3px 12px;
+        font-size: 0.75em;
     }
 }
