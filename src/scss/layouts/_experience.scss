@@ -1,0 +1,15 @@
+.experience-list {
+    font-size: 18px;
+    li {
+        margin-bottom: 5px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    i {
+        margin-right: 6px;
+    }
+    span {
+        font-weight: 600;
+    }
+}
