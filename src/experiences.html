@@ -48,11 +48,27 @@
                             <li class="nav-item">
                                 <a class="nav-link active" href="#">Photography</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./signup.html">Signup</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./login.html">Login</a>
+                            <li class="nav-item dropdown profile-dropdown">
+                                <a class="dropdown-toggle profile-dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="profile-dropdown-prefix profile-member">MM</span>
+                                    <span class="profile-dropdown-name">Mahesh Marath</span>
+                                </a>
+                                <div class="dropdown-menu profile-dropdown-menu">
+                                    <p class="profile-status">Gold Member</p>
+                                    <a class="dropdown-item" href="./experiences.html">
+                                        My booked experiences
+                                        <span class="icon-chevron-right"></span>
+                                    </a>
+                                    <a class="dropdown-item" href="./password.html">
+                                        Password
+                                        <span class="icon-chevron-right"></span>
+                                    </a>
+                                    <a class="dropdown-item" href="./index.html">
+                                        Logout
+                                        <span class="icon-chevron-right"></span>
+                                    </a>
+                                </div>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link not-text" href="./cart.html"><span class="cart-notch d-none"></span>
@@ -69,74 +85,23 @@
     <!-- Main Section -->
     <main class="main-container">
         <div class="container-fluid mb-4">
+            <hr class="divider-dark mb-4 pb-md-3">
             <div class="container container-fixed">
                 <header class="add-inline-cart-header row">
-                        <h2 class="font-secondary h1">Experiences</h2>
+                    <h2 class="font-secondary h1">Experiences</h2>
                 </header>
                 <ul class="nav nav-tabs" role="tablist">
                     <li class="nav-item">
-                      <a class="nav-link active" data-bs-toggle="tab" href="#bookedExperiences">Booked experiences</a>
+                        <a class="nav-link active" data-bs-toggle="tab" href="#bookedExperiences">Active experiences</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" data-bs-toggle="tab" href="#finishedExperiences">Finished experiences</a>
+                        <a class="nav-link" data-bs-toggle="tab" href="#finishedExperiences">Finished experiences</a>
                     </li>
-                  </ul>
-                
-                  <!-- Tab panes -->
-                  <div class="tab-content">
-                    <div id="bookedExperiences" class="container tab-pane active">
-                      <section class="cart-list">
-                        <section class="cart-details">
-                            <div class="row">
-                                <h5 class="col-12 d-flex gap-2">
-                                    <span class="icon-calendar"></span>
-                                    <span class="date font-secondary">10, Jan 2024</span>
-                                </h5>
-                                <div class="col-12 col-md-4 mb-4 mb-md-0">
-                                    <img src="./assets/images/banner-1.png"
-                                        class="w-100 h-100 objectfit-cover aspect-ratio-landscape">
-                                </div>
-                                <div class="col-12 col-md-8">
-                                    <h2 class="font-secondary">Befriend nature while cycling</h2>
-                                    <p>03 Participants</p>
-                                    <hr class="divider-gray-light my-3">
-                                    <ul class="mb-3 experience-list">
-                                        <li><i class="icon-marker-pin"></i><span> Meeting point:</span> Panjim, near the tea shop</li>
-                                        <li><i class="icon-watch"></i><span>Meeting time:</span> 10:30 AM</li>
-                                        <li><i class="icon-experience-manager"></i><span>Participants:</span> Mahesh, Shrikant, Sam</li>
-                                        <li><i class="icon-calling"></i><span>Contact number:</span> +91-8892076998</li>
-                                        <li><i class="icon-camera"></i><span>Candid photoshoot:</span> Yes</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="cart-details cart-list">
-                            <div class="row">
-                                <h5 class="col-12 d-flex gap-2">
-                                    <span class="icon-calendar"></span>
-                                    <span class="date font-secondary">10, Jan 2024</span>
-                                </h5>
-                                <div class="col-12 col-md-4 mb-4 mb-md-0">
-                                    <img src="./assets/images/banner-1.png"
-                                        class="w-100 h-100 objectfit-cover aspect-ratio-landscape">
-                                </div>
-                                <div class="col-12 col-md-8">
-                                    <h2 class="font-secondary">Befriend nature while cycling</h2>
-                                    <p>03 Participants</p>
-                                    <hr class="divider-gray-light my-3">
-                                    <ul class="mb-3 experience-list">
-                                        <li><i class="icon-marker-pin"></i><span> Meeting point:</span> Panjim, near the tea shop</li>
-                                        <li><i class="icon-watch"></i><span>Meeting time:</span> 10:30 AM</li>
-                                        <li><i class="icon-experience-manager"></i><span>Participants:</span> Mahesh, Shrikant, Sam</li>
-                                        <li><i class="icon-calling"></i><span>Contact number:</span> +91-8892076998</li>
-                                        <li><i class="icon-camera"></i><span>Candid photoshoot:</span> Yes</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </section>
-                    </section>  
-                    </div>
-                    <div id="finishedExperiences" class="container tab-pane fade"><br>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div id="bookedExperiences" class="tab-pane active">
                         <section class="cart-list">
                             <section class="cart-details">
                                 <div class="row">
@@ -153,10 +118,13 @@
                                         <p>03 Participants</p>
                                         <hr class="divider-gray-light my-3">
                                         <ul class="mb-3 experience-list">
-                                            <li><i class="icon-marker-pin"></i><span> Meeting point:</span> Panjim, near the tea shop</li>
+                                            <li><i class="icon-marker-pin"></i><span> Meeting point:</span> Panjim, near
+                                                the tea shop</li>
                                             <li><i class="icon-watch"></i><span>Meeting time:</span> 10:30 AM</li>
-                                            <li><i class="icon-experience-manager"></i><span>Participants:</span> Mahesh, Shrikant, Sam</li>
-                                            <li><i class="icon-calling"></i><span>Contact number:</span> +91-8892076998</li>
+                                            <li><i class="icon-experience-manager"></i><span>Participants:</span>
+                                                Mahesh, Shrikant, Sam</li>
+                                            <li><i class="icon-calling"></i><span>Contact number:</span> +91-8892076998
+                                            </li>
                                             <li><i class="icon-camera"></i><span>Candid photoshoot:</span> Yes</li>
                                         </ul>
                                     </div>
@@ -177,20 +145,81 @@
                                         <p>03 Participants</p>
                                         <hr class="divider-gray-light my-3">
                                         <ul class="mb-3 experience-list">
-                                            <li><i class="icon-marker-pin"></i><span> Meeting point:</span> Panjim, near the tea shop</li>
+                                            <li><i class="icon-marker-pin"></i><span> Meeting point:</span> Panjim, near
+                                                the tea shop</li>
                                             <li><i class="icon-watch"></i><span>Meeting time:</span> 10:30 AM</li>
-                                            <li><i class="icon-experience-manager"></i><span>Participants:</span> Mahesh, Shrikant, Sam</li>
-                                            <li><i class="icon-calling"></i><span>Contact number:</span> +91-8892076998</li>
+                                            <li><i class="icon-experience-manager"></i><span>Participants:</span>
+                                                Mahesh, Shrikant, Sam</li>
+                                            <li><i class="icon-calling"></i><span>Contact number:</span> +91-8892076998
+                                            </li>
                                             <li><i class="icon-camera"></i><span>Candid photoshoot:</span> Yes</li>
                                         </ul>
                                     </div>
                                 </div>
                             </section>
-                        </section>  
+                        </section>
                     </div>
-                  </div>
+                    <div id="finishedExperiences" class="tab-pane fade">
+                        <section class="cart-list">
+                            <section class="cart-details">
+                                <div class="row">
+                                    <h5 class="col-12 d-flex gap-2">
+                                        <span class="icon-calendar"></span>
+                                        <span class="date font-secondary">10, Jan 2024</span>
+                                    </h5>
+                                    <div class="col-12 col-md-4 mb-4 mb-md-0">
+                                        <img src="./assets/images/banner-1.png"
+                                            class="w-100 h-100 objectfit-cover aspect-ratio-landscape">
+                                    </div>
+                                    <div class="col-12 col-md-8">
+                                        <h2 class="font-secondary">Befriend nature while cycling</h2>
+                                        <p>03 Participants</p>
+                                        <hr class="divider-gray-light my-3">
+                                        <ul class="mb-3 experience-list">
+                                            <li><i class="icon-marker-pin"></i><span> Meeting point:</span> Panjim, near
+                                                the tea shop</li>
+                                            <li><i class="icon-watch"></i><span>Meeting time:</span> 10:30 AM</li>
+                                            <li><i class="icon-experience-manager"></i><span>Participants:</span>
+                                                Mahesh, Shrikant, Sam</li>
+                                            <li><i class="icon-calling"></i><span>Contact number:</span> +91-8892076998
+                                            </li>
+                                            <li><i class="icon-camera"></i><span>Candid photoshoot:</span> Yes</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="cart-details">
+                                <div class="row">
+                                    <h5 class="col-12 d-flex gap-2">
+                                        <span class="icon-calendar"></span>
+                                        <span class="date font-secondary">10, Jan 2024</span>
+                                    </h5>
+                                    <div class="col-12 col-md-4 mb-4 mb-md-0">
+                                        <img src="./assets/images/banner-1.png"
+                                            class="w-100 h-100 objectfit-cover aspect-ratio-landscape">
+                                    </div>
+                                    <div class="col-12 col-md-8">
+                                        <h2 class="font-secondary">Befriend nature while cycling</h2>
+                                        <p>03 Participants</p>
+                                        <hr class="divider-gray-light my-3">
+                                        <ul class="mb-3 experience-list">
+                                            <li><i class="icon-marker-pin"></i><span> Meeting point:</span> Panjim, near
+                                                the tea shop</li>
+                                            <li><i class="icon-watch"></i><span>Meeting time:</span> 10:30 AM</li>
+                                            <li><i class="icon-experience-manager"></i><span>Participants:</span>
+                                                Mahesh, Shrikant, Sam</li>
+                                            <li><i class="icon-calling"></i><span>Contact number:</span> +91-8892076998
+                                            </li>
+                                            <li><i class="icon-camera"></i><span>Candid photoshoot:</span> Yes</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                        </section>
+                    </div>
                 </div>
             </div>
+        </div>
         </div>
     </main>
 

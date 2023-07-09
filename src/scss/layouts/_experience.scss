@@ -1,14 +1,18 @@
 .experience-list {
-    font-size: 18px;
+    font-size: 1.125em;
+
     li {
-        margin-bottom: 5px;
+        margin-bottom: 8px;
+
         &:last-child {
             margin-bottom: 0;
         }
     }
+
     i {
         margin-right: 6px;
     }
+
     span {
         font-weight: 600;
     }

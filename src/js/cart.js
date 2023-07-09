@@ -1,4 +1,5 @@
 const cancelCarting = document.getElementById("cancel-carting");
+const checkout = document.getElementById("checkout");
 
 if (cancelCarting) {
     cancelCarting.addEventListener("click", () => {
@@ -15,4 +16,10 @@ if (goBackDetails) {
             window.location.href = "./details.html";
         });
     }
+}
+
+if (checkout) {
+    checkout.addEventListener("click", () => {
+        window.location.href = "./checkout.html";
+    });
 }

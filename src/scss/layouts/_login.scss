@@ -7,9 +7,8 @@
 }
 
 .carousel-comment {
-    background-color: rgba(65, 83, 183, 0.1);
+    position: relative;
     padding: 75px 20px 20px;
-    backdrop-filter: blur(1.5px);
 
     &-info {
         color: var(--bs-white);
@@ -69,5 +68,19 @@
             list-style: decimal;
             list-style-position: inside;
         }
+    }
+}
+
+.info-carousel {
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+
+    &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(85, 84, 115, 0.61);
+        backdrop-filter: blur(40px);
     }
 }
