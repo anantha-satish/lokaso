@@ -1,0 +1,1 @@
+(()=>{const e=document.querySelectorAll(".btn-go-details");if(e)for(let t=0;t<e.length;t++)e[t].addEventListener("click",(()=>{window.location.href="./details.html"}))})();

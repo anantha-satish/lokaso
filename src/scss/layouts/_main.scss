@@ -1,8 +1,0 @@
-.main-container {
-    padding-top: 112px;
-    min-height: calc(100vh - 407px);
-
-    @include media-breakpoint-down(md) {
-        padding-top: 62px;
-    }
-}
